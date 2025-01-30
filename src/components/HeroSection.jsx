@@ -20,14 +20,14 @@ const HeroSection = () => {
                 5000, // wait 1s before replacing "Mice" with "Hamsters"
                 "Full Stack Developer",
                 5000,
-                "Frontend Developer",
-                5000,
-                "Backend Developer",
-                5000,
+                // "Frontend Developer",
+                // 5000,
+                // "Backend Developer",
+                // 5000,
               ]}
               wrapper="span"
               speed={50}
-              style={{ fontSize: "2em", display: "inline-block" }}
+              style={{ fontSize: "1em", display: "inline-block" }}
               repeat={Infinity}
             />
           </h1>

@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <main className=" min-h-screen font-[family-name:var(--font-geist-sans)]">
       <Navbar />
-      <div className="container mx-auto py-4 px-12">
+      <div className="container mt-28 mx-auto py-4 px-12">
         <HeroSection />
       </div>
     </main>
