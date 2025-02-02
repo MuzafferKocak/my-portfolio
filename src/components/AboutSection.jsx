@@ -4,42 +4,42 @@ import Image from "next/image";
 import TabButton from "./TabButton";
 
 const TAB_DATA = [
-    {
-        title: "Skills",
-        id: "skills",
-        content: (
-            <ul className="list-disc pl-2">
-                <li>Node.js</li>
-                <li>Express</li>
-                <li>MongoDB</li>
-                <li>JavaScript</li>
-                <li>React</li>
-            </ul>
-        )
-    },
-    {
-        title: "Education",
-        id: "education",
-        content: (
-            <ul className="list-disc pl-2">
-                <li>Frontend Development</li>
-                <li>Backend Development</li>
-            </ul>
-        )
-    },
-    {
-        title: "Certifications",
-        id: "certifications",
-        content:(
-            <ul className="list-disc pl-2">
-                <li>JavaScript</li>
-                <li>Web Development Essential</li>
-                <li>Web Development with React</li>
-                <li>Backend Development</li>
-            </ul>
-        )
-    }
-]
+  {
+    title: "Skills",
+    id: "skills",
+    content: (
+      <ul className="list-disc pl-2">
+        <li>Node.js</li>
+        <li>Express</li>
+        <li>MongoDB</li>
+        <li>JavaScript</li>
+        <li>React</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Education",
+    id: "education",
+    content: (
+      <ul className="list-disc pl-2">
+        <li>Frontend Development</li>
+        <li>Backend Development</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Certifications",
+    id: "certifications",
+    content: (
+      <ul className="list-disc pl-2">
+        <li>JavaScript</li>
+        <li>Web Development Essential</li>
+        <li>Web Development with React</li>
+        <li>Backend Development</li>
+      </ul>
+    ),
+  },
+];
 
 const AboutSection = () => {
   const [tab, setTab] = useState("skills");
@@ -52,7 +52,7 @@ const AboutSection = () => {
   };
 
   return (
-    <section className="text-white ">
+    <section className="text-white" id="about">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
         <Image
           src="/images/computer.webp"
@@ -93,7 +93,7 @@ const AboutSection = () => {
             </TabButton>
           </div>
           <div className="mt-8">
-            {TAB_DATA.find((t)=> t.id === tab).content}
+            {TAB_DATA.find((t) => t.id === tab).content}
           </div>
         </div>
       </div>
