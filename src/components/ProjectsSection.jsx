@@ -33,7 +33,7 @@ const projectsData = [
 
 const ProjectsSection = () => {
   return (
-    <>
+    <section id="projects" >
       <h2 className="text-center text-4xl font-bold text-white mb-8 mt-4 md:mb-10">My Projects</h2>
       <div>
         {projectsData.map((project) => (
@@ -48,7 +48,7 @@ const ProjectsSection = () => {
           />
         ))}
       </div>
-    </>
+    </section>
   );
 };
 
