@@ -1,5 +1,5 @@
 "use client";
-import React, {useState} from "react";
+import React, { useState } from "react";
 import GithubIcon from "../../public/github-icon.svg";
 import LinkedinIcon from "../../public/linkedin-icon.svg";
 import Link from "next/link";
@@ -32,7 +32,6 @@ const EmailSection = () => {
 
     const response = await fetch(endpoint, options);
     const resData = await response.json();
-    
 
     if (response.status === 200) {
       console.log("Message sent.");
@@ -40,7 +39,10 @@ const EmailSection = () => {
     }
   };
   return (
-    <section className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4" id="contact">
+    <section
+      className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4"
+      id="contact"
+    >
       <div>
         <h5 className="text-xl font-bold text-white my-2">Let's Connect</h5>
         <p className="text-[#adb7be] mb-4 max-w-md">
@@ -50,11 +52,28 @@ const EmailSection = () => {
           fugiat quis ipsam maxime. Vel, ratione ullam!
         </p>
         <div className="socials flex flex-row gap-2">
-          <Link href="Github">
-            <Image src={GithubIcon} alt="GitHub Icon" />
+          <Link href="https://github.com/MuzafferKocak" target="_blank">
+            <div className="w-12 h-12 bg-[#121212] rounded-lg flex items-center justify-center hover:bg-green-400 transition-all duration-300">
+              <Image
+                src={GithubIcon}
+                alt="GitHub Icon"
+                width={48}
+                height={48}
+              />
+            </div>
           </Link>
-          <Link href="Linkedin">
-            <Image src={LinkedinIcon} alt="Linkedin Icon" />
+          <Link
+            href="https://www.linkedin.com/in/muzaffer-kocak/"
+            target="_blank"
+          >
+            <div className="w-12 h-12 bg-[#121212] rounded-lg flex items-center justify-center hover:bg-green-400 transition-all duration-300">
+              <Image
+                src="/linkedin-icon.svg"
+                alt="Linkedin Icon"
+                width={48}
+                height={48}
+              />
+            </div>
           </Link>
         </div>
       </div>
@@ -73,7 +92,7 @@ const EmailSection = () => {
                 Your Email
               </label>
               <input
-              name="email"
+                name="email"
                 type="email"
                 id="email"
                 required
@@ -89,7 +108,7 @@ const EmailSection = () => {
                 Subject
               </label>
               <input
-              name="subject"
+                name="subject"
                 type="text"
                 id="subject"
                 required
