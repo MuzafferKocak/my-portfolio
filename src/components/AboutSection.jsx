@@ -2,6 +2,7 @@
 import React, { useTransition, useState } from "react";
 import Image from "next/image";
 import TabButton from "./TabButton";
+import Link from "next/link";
 
 const TAB_DATA = [
   {
@@ -22,6 +23,7 @@ const TAB_DATA = [
     id: "education",
     content: (
       <ul className="list-disc pl-2">
+        <li>JavaScript</li>
         <li>Frontend Development</li>
         <li>Backend Development</li>
       </ul>
@@ -32,10 +34,42 @@ const TAB_DATA = [
     id: "certifications",
     content: (
       <ul className="list-disc pl-2">
-        <li>JavaScript</li>
-        <li>Web Development Essential</li>
-        <li>Web Development with React</li>
-        <li>Backend Development</li>
+        <li>
+          <Link
+            href="https://www.udemy.com/certificate/UC-c5f6c583-1033-4670-8a3f-f0d58bb9bed1/"
+            target="_blank"
+            className="hover:text-green-400 hover:underline"
+          >
+            JavaScript
+          </Link>
+        </li>
+        <li>
+          <Link
+            href="https://app.diplomade.com/user/badge-detail/41761431111694-0x8d911844c101911662af31638159CbEE91229Faf"
+            target="_blank"
+            className="hover:text-green-400 hover:underline"
+          >
+            Web Development Essential
+          </Link>
+        </li>
+        <li>
+          <Link
+            href="https://app.diplomade.com/user/badge-detail/46826015602393-0x8d911844c101911662af31638159CbEE91229Faf"
+            target="_blank"
+            className="hover:text-green-400 hover:underline"
+          >
+            Web Development with React
+          </Link>
+        </li>
+        <li>
+          <Link
+            href="https://verified.sertifier.com/en/verify/97928880125438/"
+            target="_blank"
+            className="hover:text-green-400 hover:underline"
+          >
+            Backend Development
+          </Link>
+        </li>
       </ul>
     ),
   },

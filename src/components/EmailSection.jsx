@@ -68,7 +68,7 @@ const EmailSection = () => {
           >
             <div className="w-12 h-12 bg-[#121212] rounded-lg flex items-center justify-center hover:bg-green-400 transition-all duration-300">
               <Image
-                src="/linkedin-icon.svg"
+                src={LinkedinIcon}
                 alt="Linkedin Icon"
                 width={48}
                 height={48}
