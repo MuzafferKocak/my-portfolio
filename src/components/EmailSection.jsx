@@ -53,7 +53,7 @@ const EmailSection = () => {
         </p>
         <div className="socials flex flex-row gap-2">
           <Link href="https://github.com/MuzafferKocak" target="_blank">
-            <div className="w-12 h-12 bg-[#121212] rounded-lg flex items-center justify-center hover:bg-green-400 transition-all duration-300">
+            <div className="w-12 h-12 bg-[#121212] rounded-lg flex items-center justify-center hover:bg-green-500 transition-all duration-300">
               <Image
                 src={GithubIcon}
                 alt="GitHub Icon"
@@ -66,7 +66,7 @@ const EmailSection = () => {
             href="https://www.linkedin.com/in/muzaffer-kocak/"
             target="_blank"
           >
-            <div className="w-12 h-12 bg-[#121212] rounded-lg flex items-center justify-center hover:bg-green-400 transition-all duration-300">
+            <div className="w-12 h-12 bg-[#121212] rounded-lg flex items-center justify-center hover:bg-green-500 transition-all duration-300">
               <Image
                 src={LinkedinIcon}
                 alt="Linkedin Icon"

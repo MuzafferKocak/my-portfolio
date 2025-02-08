@@ -96,12 +96,23 @@ const AboutSection = () => {
         />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
-          <p className="text-base lg:text-lg">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi,
-            ea nulla facilis nostrum enim architecto voluptates autem beatae
-            quia accusantium, commodi rem, doloremque suscipit hic doloribus
-            earum voluptatibus. Numquam animi ipsam laudantium voluptatibus
-            asperiores aspernatur obcaecati facere labore quos dicta.
+          <p className="text-base lg:text-lg mb-1">
+            I am a passionate Full Stack Web Developer with a focus on creating
+            interactive and responsive web applications. My expertise includes
+            JavaScript, React, Next.js, Redux, Node.js, Express, MongoDB,
+            Sequelize, HTML, CSS, and Git.
+          </p>
+          <p className="text-base lg:text-lg mb-2">
+            I thrive on challenges and am always eager to expand my knowledge.
+            Collaboration is key to building great applications, and I’m excited
+            to contribute to innovative projects and grow in a dynamic
+            environment.
+          </p>
+          <p className="text-base lg:text-lg mb-4">
+            Having transitioned from a background in CNC machining and
+            engineering, I now channel my passion for problem-solving into full
+            stack development. This diverse experience gives me a unique
+            perspective on tackling challenges in tech.
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
