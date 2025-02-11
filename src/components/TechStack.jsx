@@ -30,8 +30,8 @@ const skills = [
 
 const TechStack = () => {
   return (
-    <section className="py-12 px-4">
-      <h2 className="text-4xl font-bold text-center text-white mb-8 mt-4 md:mb-10">Tech Stack</h2>
+    <section id='skills' className="lg:py-16 px-4">
+      <h2 className="text-4xl font-bold text-center text-white mb-2 mt-3 md:mb-6">Tech Stack</h2>
       <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-4 border border-[#33353F] rounded-lg p-2">
         {skills.map((skill, index) => (
           <div key={index} className="flex flex-col items-center p-2 bg-[#121212] border border-[#33353F] rounded-lg">

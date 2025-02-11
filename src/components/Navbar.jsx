@@ -12,9 +12,14 @@ const navLinks = [
     path: "#about",
   },
   {
+    title: "Skills",
+    path: "#skills",
+  },
+  {
     title: "Projects",
     path: "#projects",
   },
+
   {
     title: "Contact",
     path: "#contact",
@@ -27,7 +32,8 @@ const Navbar = () => {
     <nav className="fixed mx-auto top-0 left-0 right-0 z-10 border border-[#33353F] bg-[#121212] bg-opacity-100">
       <div className="flex container flex-wrap items-center justify-between mx-auto px-4 py-3 ">
         <Link href={"/"} className="text-2xl md:text-5xl ">
-          <Image src="/images/mek.png"
+          <Image
+            src="/images/mek.png"
             alt="Logo"
             width={48}
             height={48}
@@ -35,7 +41,8 @@ const Navbar = () => {
             style={{
               objectFit: "cover",
               aspectRatio: "1/1",
-            }} />
+            }}
+          />
         </Link>
         <div className="mobile-menu block md:hidden">
           {!navbarOpen ? (

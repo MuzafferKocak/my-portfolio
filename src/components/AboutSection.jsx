@@ -86,7 +86,7 @@ const AboutSection = () => {
   };
 
   return (
-    <section className="text-white lg:py-10" id="about">
+    <section className="text-white lg:py-14" id="about">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-10 sm:py-12 xl:px-6">
         <Image
           src="/images/computer.webp"
@@ -100,11 +100,11 @@ const AboutSection = () => {
             I am a passionate Full Stack Web Developer with a focus on creating
             interactive and responsive web applications. My expertise includes
             JavaScript, React, Next.js, Redux, Node.js, Express, MongoDB,
-            Sequelize, HTML, CSS, and Git.
+            Sequelize, HTML, CSS, Tailwind, MUI, Bootstrap and Git.
           </p>
           <p className="text-base lg:text-lg mb-2">
             I thrive on challenges and am always eager to expand my knowledge.
-            Collaboration is key to building great applications, and I’m excited
+            Collaboration is key to building great applications, and I'm excited
             to contribute to innovative projects and grow in a dynamic
             environment.
           </p>

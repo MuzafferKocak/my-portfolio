@@ -43,7 +43,7 @@ const HeroSection = () => {
             in building modern web applications. With expertise in{" "}
             <strong>React, Next.js, Express, MongoDB, and Node.js</strong>, I
             create scalable and user-friendly solutions. Let's build something
-            amazing together! 🚀
+            amazing together! 
           </p>
           <div>
             <Link
