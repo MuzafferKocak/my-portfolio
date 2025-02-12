@@ -34,7 +34,7 @@ const projectsData = [
   {
     id: 4,
     title: "Stock-App",
-    description: "",
+    description: "My Stock is an intuitive inventory management tool for users to efficiently manage their stock. With features like product, brand, and company data management, along with sales and purchasing tracking, users can easily create accounts, add and edit products, and monitor their inventory.",
     image: "/images/projects/stockApp.jpeg",
     gitUrl: "https://github.com/MuzafferKocak/my-stock",
     previewUrl: "https://my-stock-flame.vercel.app/",
@@ -42,7 +42,7 @@ const projectsData = [
   {
     id: 5,
     title: "Store-App",
-    description: "",
+    description: "Store App is a TypeScript-powered application where users can explore products, view their prices, and add them to a favorites list. The app provides a simple yet functional interface for managing favorite items and ensuring a smooth experience.",
     image: "/images/projects/store-app.png",
     gitUrl: "https://github.com/MuzafferKocak/store-app",
     previewUrl: "https://store-app-plum.vercel.app/",
@@ -50,7 +50,7 @@ const projectsData = [
   {
     id: 6,
     title: "Mek-Store",
-    description: "",
+    description: "Mek-Store is a basic product showcase website created with React and Tailwind CSS. It features a simple design where users can view products and their prices in a responsive layout.",
     image: "/images/projects/mek-store.png",
     gitUrl: "https://github.com/MuzafferKocak/mek-store",
     previewUrl: "https://mek-store.vercel.app/",

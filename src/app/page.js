@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <main className=" min-h-screen font-[family-name:var(--font-geist-sans)]">
       <Navbar />
-      <div className="container mt-24 mx-auto py-6 px-12">
+      <div className="container mt-20 mx-auto py-6 px-12">
         <HeroSection />
         <AboutSection/>
         <TechStack/>
