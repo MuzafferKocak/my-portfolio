@@ -47,7 +47,8 @@ const EmailSection = () => {
         <h5 className="text-xl font-bold text-white my-2">Let's Connect</h5>
         <p className="text-[#adb7be] mb-4 max-w-md">
           {" "}
-          I'm always open to new opportunities, collaborations, and exciting projects. Let's connect and create something great together! 
+          I'm always open to new opportunities, collaborations, and exciting
+          projects. Let's connect and create something great together!
         </p>
         <div className="socials flex flex-row gap-2">
           <Link href="https://github.com/MuzafferKocak" target="_blank">

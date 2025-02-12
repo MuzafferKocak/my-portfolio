@@ -12,12 +12,12 @@ export default function Home() {
       <Navbar />
       <div className="container mt-20 mx-auto py-6 px-12">
         <HeroSection />
-        <AboutSection/>
-        <TechStack/>
-        <ProjectsSection/>
-        <EmailSection/>
+        <AboutSection />
+        <TechStack />
+        <ProjectsSection />
+        <EmailSection />
       </div>
-      <Footer/>
+      <Footer />
     </main>
   );
 }
