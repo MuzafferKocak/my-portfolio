@@ -96,19 +96,19 @@ const AboutSection = () => {
         />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
-          <p className="text-base lg:text-lg mb-1">
+          <p className="text-[#adb7be] text-base lg:text-lg mb-1">
             I am a passionate Full Stack Web Developer with a focus on creating
             interactive and responsive web applications. My expertise includes
             JavaScript, React, Next.js, Redux, Node.js, Express, MongoDB,
             Sequelize, HTML, CSS, Tailwind, MUI, Bootstrap and Git.
           </p>
-          <p className="text-base lg:text-lg mb-2">
+          <p className="text-[#adb7be] text-base lg:text-lg mb-2">
             I thrive on challenges and am always eager to expand my knowledge.
             Collaboration is key to building great applications, and I'm excited
             to contribute to innovative projects and grow in a dynamic
             environment.
           </p>
-          <p className="text-base lg:text-lg mb-4">
+          <p className="text-[#adb7be] text-base lg:text-lg mb-4">
             Having transitioned from a background in CNC machining and
             engineering, I now channel my passion for problem-solving into full
             stack development. This diverse experience gives me a unique
