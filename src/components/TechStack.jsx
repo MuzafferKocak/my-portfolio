@@ -38,7 +38,7 @@ const TechStack = () => {
         {skills.map((skill, index) => (
           <div
             key={index}
-            className="flex flex-col items-center p-2 bg-[#121212] border border-[#33353F] rounded-lg transition-transform duration-300 hover:rotate-6 hover:scale-105 hover:bg-[#1e1e1eab]"
+            className="flex flex-col items-center p-2 bg-[#121212] border border-[#33353F] rounded-lg transition-transform duration-300 hover:rotate-6 hover:scale-105 hover:bg-[#2b2b2bab]"
           >
             <img
               src={`https://skillicons.dev/icons?i=${skill.icon}`}
