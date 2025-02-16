@@ -47,7 +47,9 @@ const HeroSection = () => {
           </p>
           <div>
             <Link
-              href="/cv/"
+              href="/cv/En_MuzafferKocak.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-green-300 to-green-900 hover:bg-green-500 text-white mt-3"
             >
               <span className="flex items-center gap-3 bg-[#121212] hover:bg-green-400 rounded-full px-5 py-2">
