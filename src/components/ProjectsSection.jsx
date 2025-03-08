@@ -74,14 +74,14 @@ const ProjectsSection = () => {
       <h2 className="text-center text-4xl font-bold text-white mb-4 mt-4 md:mb-8">
         My Projects
       </h2>
-      <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
+      <ul ref={ref} className="grid md:grid-cols-2 gap-8 md:gap-12">
         {projectsData.map((project, index) => (
           <motion.li
             key={index}
             variants={cardVariants}
             initial="initial"
             animate={isInView ? "animate" : "initial"}
-            transition={{ duration: 0.3, delay: index * 0.4 }}
+            transition={{ duration: 0.5, delay: index * 0.4 }}
           >
             <ProjectCard
               key={project.id}

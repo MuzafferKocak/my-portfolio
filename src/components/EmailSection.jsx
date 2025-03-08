@@ -46,8 +46,8 @@ const EmailSection = () => {
       {" "}
       <div
         className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] 
-  from-green-700 to-transparent rounded-full h-60 w-60 sm:h-80 sm:w-80 z-0 blur-lg 
-  absolute top-[85%] sm:top-3/4 left-4 transform -translate-x-1/2 -translate-1/2"
+  from-green-700 to-transparent rounded-full h-60 w-60 sm:h-80 sm:w-80 md:h-80 md:w-80 z-10 blur-lg 
+  absolute top-[93%] sm:top-[80%] md:top-[75%] left-8 sm:left-8 md:left-8 transform -translate-x-1/2 -translate-1/2"
       ></div>
       <div className="">
         <h5 className="text-xl font-bold text-white my-2">Let's Connect</h5>

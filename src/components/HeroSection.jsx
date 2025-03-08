@@ -15,7 +15,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="col-span-7 place-self-center text-center sm:text-left"
         >
-          <h1 className="mb-4 text-4xl sm:text-4xl lg:text-6xl font-extrabold">
+          <h1 className="mb-4 text-4xl sm:text-4xl lg:text-5xl font-extrabold">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-green-800">
               Hello, I am{" "}
             </span>
@@ -25,16 +25,16 @@ const HeroSection = () => {
                 // Same substring at the start will only be typed out once, initially
                 "Muzaffer",
                 5000, // wait 1s before replacing "Mice" with "Hamsters"
-                "Full Stack Developer",
+                "a Frontend Developer",
                 5000,
-                // "Frontend Developer",
-                // 5000,
-                // "Backend Developer",
-                // 5000,
+                "a Backend Developer",
+                5000,
+                "a Full Stack Developer",
+                5000,
               ]}
               wrapper="span"
               speed={50}
-              style={{ fontSize: "1em", display: "inline-block" }}
+              style={{ fontSize: "3rem", display: "inline-block" }}
               repeat={Infinity}
             />
           </h1>
