@@ -137,7 +137,7 @@ const AboutSection = () => {
               Certifications{" "}
             </TabButton>
           </div>
-          <div className="mt-8">
+          <div className="mt-8 min-h-[130px]">
             {TAB_DATA.find((t) => t.id === tab).content}
           </div>
         </div>
