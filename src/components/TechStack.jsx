@@ -30,7 +30,7 @@ const skills = [
 
 const TechStack = () => {
   return (
-    <section id="skills" className="lg:py-16 px-4">
+    <section id="skills" className="lg:py-16 px-4 ">
       <h2 className="text-4xl font-bold text-center text-white mb-2 mt-3 md:mb-6">
         Tech Stack
       </h2>

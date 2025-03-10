@@ -70,7 +70,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="rounded-full border-2 border-green-500 bg-[#191919] w-[200px] h-[200px] sm:w-[250px] sm:h-[250px] lg:w-[370px] lg:h-[370px] relative"
+            className="rounded-full border-2 border-green-500 bg-[#121212] w-[200px] h-[200px] sm:w-[250px] sm:h-[250px] lg:w-[370px] lg:h-[370px] relative"
           >
             <Image
               src="/images/me.jpeg"

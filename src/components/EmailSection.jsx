@@ -101,7 +101,7 @@ const EmailSection = () => {
                 type="email"
                 id="email"
                 required
-                placeholder="Enter your mail adrress"
+                placeholder="Enter your email adrress"
                 className="bg-[#121212] border border-[#33353f] placeholder-[#9ca2a9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
               />
             </div>
@@ -117,7 +117,7 @@ const EmailSection = () => {
                 type="text"
                 id="subject"
                 required
-                placeholder="subject"
+                placeholder="Subject of your message"
                 className="bg-[#121212] border border-[#33353f] placeholder-[#9ca2a9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
               />
             </div>
