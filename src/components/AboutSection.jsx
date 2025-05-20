@@ -45,7 +45,7 @@ const TAB_DATA = [
         </li>
         <li>
           <Link
-            href="https://app.diplomade.com/user/badge-detail/41761431111694-0x8d911844c101911662af31638159CbEE91229Faf"
+            href="https://verified.sertifier.com/en/verify/90012100016317/"
             target="_blank"
             className="hover:text-green-400 hover:underline"
           >
@@ -54,7 +54,7 @@ const TAB_DATA = [
         </li>
         <li>
           <Link
-            href="https://app.diplomade.com/user/badge-detail/46826015602393-0x8d911844c101911662af31638159CbEE91229Faf"
+            href="https://verified.sertifier.com/en/verify/45370841524901/"
             target="_blank"
             className="hover:text-green-400 hover:underline"
           >
