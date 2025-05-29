@@ -45,7 +45,7 @@ const HeroSection = () => {
             create scalable and user-friendly solutions. Let's build something
             amazing together!
           </p>
-          <div>
+          <div className="flex flex-col sm:flex-row gap-3">
             <Link
               href="/cv/MuzafferKocak.pdf"
               target="_blank"
@@ -60,7 +60,24 @@ const HeroSection = () => {
                   alt="download-icon"
                   className="filter invert"
                 />
-                Download CV
+                Download CV (EN)
+              </span>
+            </Link>
+            <Link
+              href="/cv/MuzafferKocak_DE.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-green-300 to-green-900 hover:bg-green-500 text-white mt-3"
+            >
+              <span className="flex items-center gap-3 bg-[#121212] hover:bg-green-400 rounded-full px-5 py-2">
+                <Image
+                  src="/download-icon.svg"
+                  width={24}
+                  height={24}
+                  alt="download-icon"
+                  className="filter invert"
+                />
+                Download CV (DE)
               </span>
             </Link>
           </div>
