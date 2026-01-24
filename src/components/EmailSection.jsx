@@ -35,10 +35,14 @@ const EmailSection = () => {
       id="contact"
     >
       <div
-        className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))]
-        from-green-700 to-transparent rounded-full h-60 w-60 sm:h-80 sm:w-80 md:h-80 md:w-80 
-        z-10 blur-lg absolute top-[93%] sm:top-[80%] md:top-[75%] left-8 transform
-        -translate-x-1/2 -translate-1/2"
+        className="
+  bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))]
+  from-green-700 to-transparent
+  rounded-full
+  blur-2xl
+  absolute
+  left-2 transform -translate-x-1/2 h-48 w-48 top-[88%] sm:h-64 sm:w-64 sm:top-[82%] md:h-80 md:w-80 md:top-[78%] lg:h-96 lg:w-96 lg:top-[72%]
+"
       ></div>
 
       <div>

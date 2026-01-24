@@ -17,6 +17,18 @@ const ProjectsSection = () => {
       previewUrl: "https://blog-app-murex-two.vercel.app/",
     },
     {
+      id: "disney",
+      image: "/images/projects/disney.png",
+      gitUrl: "https://github.com/MuzafferKocak/disney-clone",
+      previewUrl: "https://disney-clone-livid-seven.vercel.app/",
+    },
+    {
+      id: "dashboard",
+      image: "/images/projects/dashboard.png",
+      gitUrl: "https://github.com/MuzafferKocak/dashboard",
+      previewUrl: "https://dashboard-blue-three.vercel.app/",
+    },
+    {
       id: "movie",
       image: "/images/projects/movie-app.png",
       gitUrl: "https://github.com/MuzafferKocak/movie-app",

@@ -53,6 +53,15 @@
         "title": "Milestone-Blog-App",
         "description": "Blog-App is a modern and fully responsive blogging platform built with React, MUI, and Redux Toolkit. It includes a custom Node.js, Express, and MongoDB backend with high performance. Users can create, edit, and manage blog posts with a clean and intuitive UI."
       },
+      "disney": {
+        "title": "Disney+ Clone",
+        "description": "A responsive Disney+ UI clone built with Next.js, React, and TailwindCSS. It features a dynamic movie and series catalog from the TMDB API, detail and trailer modals, a watchlist using localStorage, and a modern responsive design for desktop and mobile."
+      },
+      "dashboard": {
+        "title": "Admin Dashboard",
+        "description": "Admin dashboard built with Next.js, MUI, and Nivo charts. Responsive, themeable, and frontend-focused."
+      },
+
       "movie": {
         "title": "Movie-App",
         "description": "Movie-App is a modern movie browsing application built with React, Tailwind CSS, and Firebase. Users can explore movies, view details, and add favorites using a clean and responsive interface."

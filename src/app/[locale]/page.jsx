@@ -9,16 +9,17 @@ import ProjectsSection from "@/components/ProjectsSection";
 import TechStack from "@/components/TechStack";
 
 export default function HomePage() {
-  return (<main className="min-h-screen font-[family-name:var(--font-geist-sans)]S ">
-      <Navbar/>
-    <div className="container mt-20 mx-auto py-6 px-12">
-    <HeroSection/>
-      <AboutSection />
-      <TechStack/>
-      <ProjectsSection/>
-      <EmailSection/>
-    </div>
-    <Footer/>
-  </main>
+  return (
+    <main className="min-h-screen font-[family-name:var(--font-geist-sans)]">
+      <Navbar />
+      <div className="container mt-20 mx-auto py-6 px-12">
+        <HeroSection />
+        <AboutSection />
+        <TechStack />
+        <ProjectsSection />
+        <EmailSection />
+      </div>
+      <Footer />
+    </main>
   );
 }

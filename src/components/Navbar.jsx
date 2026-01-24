@@ -8,13 +8,15 @@ import MenuOverlay from "./MenuOverlay";
 import Image from "next/image";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { useTranslations } from "next-intl";
-import { usePathname } from "next/navigation";
+import { useParams } from "next/navigation";
 
 const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
   const t = useTranslations("Navbar");
-  const pathname = usePathname();
-  const locale = pathname?.split("/")[1] || "en";
+
+ const params = typeof window !== "undefined" ? useParams() : {};
+const locale = typeof params?.locale === "string" ? params.locale : "en";
+
 
   const navLinks = [
     { title: t("about"), path: "#about" },
@@ -26,13 +28,10 @@ const Navbar = () => {
   const handleLinkClick = () => setNavbarOpen(false);
 
   return (
-    <nav className="fixed mx-auto top-0 left-0 right-0 z-10 border border-[#33353F] bg-[#121212] bg-opacity-100">
+    <nav className="fixed top-0 left-0 right-0 z-10 border border-[#33353F] bg-[#121212] bg-opacity-100">
       <div className="flex container flex-wrap items-center justify-between mx-auto px-4 py-3">
-        <Link
-          href={`/${locale}`}
-          className="text-2xl md:text-5xl"
-          onClick={handleLinkClick}
-        >
+        {/* Logo */}
+        <Link href={`/${locale}`} onClick={handleLinkClick}>
           <Image
             src="/images/mek.png"
             alt="Logo"
@@ -44,7 +43,8 @@ const Navbar = () => {
           />
         </Link>
 
-        <div className="mobile-menu block md:hidden">
+        {/* Mobile hamburger */}
+        <div className="block md:hidden">
           {!navbarOpen ? (
             <button
               onClick={() => setNavbarOpen(true)}
@@ -62,10 +62,8 @@ const Navbar = () => {
           )}
         </div>
 
-        <div
-          className="menu hidden md:flex md:w-auto items-center gap-6"
-          id="navbar"
-        >
+        {/* Desktop menu */}
+        <div className="hidden md:flex md:w-auto items-center gap-6">
           <ul className="flex p-4 md:p-0 md:flex-row md:space-x-8 mt-0">
             {navLinks.map((link, index) => (
               <li key={index}>
@@ -81,6 +79,7 @@ const Navbar = () => {
         </div>
       </div>
 
+      {/* Mobile overlay menu */}
       {navbarOpen && (
         <div className="md:hidden bg-[#121212] border-t border-[#33353F]">
           <MenuOverlay links={navLinks} closeMenu={handleLinkClick} />

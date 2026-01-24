@@ -28,7 +28,7 @@ export default function LanguageSwitcher() {
             onClick={() => changeLang("en")}
             className="flex items-center gap-2 px-3 py-2 text-white hover:bg-gray-700 w-full"
           >
-            <Image src="/flags/en.png" width={20} height={20} alt="EN" />
+            <Image src="/flags/en.png" width={20} height={20} alt="EN" className="w-5 h-auto" />
             EN
           </button>
 
@@ -36,14 +36,14 @@ export default function LanguageSwitcher() {
             onClick={() => changeLang("de")}
             className="flex items-center gap-2 px-3 py-2 text-white hover:bg-gray-700 w-full"
           >
-            <Image src="/flags/de.png" width={20} height={20} alt="DE" />
+            <Image src="/flags/de.png" width={20} height={20} alt="DE" className="w-5 h-auto" />
             DE
           </button>
           <button
             onClick={() => changeLang("tr")}
             className="flex items-center gap-2 px-3 py-2 text-white hover:bg-gray-700 w-full"
           >
-            <Image src="/flags/tr.png" width={20} height={20} alt="TR" />
+            <Image src="/flags/tr.png" width={20} height={20} alt="TR" className="w-5 h-auto" />
             TR
           </button>
         </div>

@@ -56,6 +56,15 @@
         "title": "Milestone Blog Uygulaması",
         "description": "Modern ve tamamen responsive bir blog platformudur. React, MUI ve Redux Toolkit ile geliştirilmiştir. Backend Node.js, Express ve MongoDB ile oluşturulmuştur. Kullanıcılar blog yazıları oluşturabilir, düzenleyebilir ve yönetebilir."
       },
+      "disney": {
+        "title": "Disney+ Klon",
+        "description": "Next.js, React ve TailwindCSS ile oluşturulmuş responsive bir Disney+ UI klonu. TMDB API’den dinamik film ve dizi kataloğu, detay ve fragman modalları, localStorage ile watchlist ve hem masaüstü hem mobil için modern responsive tasarım içerir."
+      },
+      "dashboard": {
+        "title": "Admin Paneli",
+        "description": "Next.js, MUI ve Nivo Charts ile oluşturulmuş Admin paneli. Responsive, tema destekli ve frontend odaklıdır."
+      },
+
       "movie": {
         "title": "Movie Uygulaması",
         "description": "React, Tailwind CSS ve Firebase ile oluşturulmuş modern bir film uygulaması. Kullanıcılar filmleri keşfedebilir, detayları görebilir ve favorilere ekleyebilir."
