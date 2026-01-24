@@ -10,7 +10,7 @@ import TechStack from "@/components/TechStack";
 
 export default function HomePage() {
   return (
-    <main className="min-h-screen font-[family-name:var(--font-geist-sans)]">
+    <main className="min-h-screen font-[family-name:var(--font-geist-sans)] overflow-x-hidden overflow-y-hidden">
       <Navbar />
       <div className="container mt-20 mx-auto py-6 px-12">
         <HeroSection />
