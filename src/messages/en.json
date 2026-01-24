@@ -1,0 +1,87 @@
+{
+  "Navbar": {
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "Hero": {
+    "hello": "Hello, I am",
+    "type1": "Muzaffer",
+    "type2": "a Frontend Developer",
+    "type3": "a Backend Developer",
+    "type4": "a Full Stack Developer",
+    "description": "I am a passionate Full Stack Developer specializing in building modern web applications. With expertise in React, Next.js, Express, MongoDB, and Node.js, I create scalable and user-friendly solutions. Let's build something amazing together!",
+    "cv_en": "Download CV (EN)",
+    "cv_de": "Download CV (DE)"
+  },
+  "About": {
+    "title": "About Me",
+    "description1": "I am a passionate Full Stack Web Developer focused on creating interactive and responsive web applications. My expertise includes JavaScript, React, Next.js, Redux, Node.js, Express, MongoDB, Sequelize, HTML, CSS, Tailwind, MUI, Bootstrap, and Git.",
+    "description2": "I thrive on challenges and am always eager to expand my knowledge. Collaboration is key to building great applications, and I am excited to contribute to innovative projects and grow in a dynamic environment.",
+    "description3": "Having transitioned from a background in CNC machining and engineering, I now channel my passion for problem-solving into full stack development. This diverse experience gives me a unique perspective on tackling challenges in technology.",
+    "skills": {
+      "title": "Skills",
+      "react": "React",
+      "js": "JavaScript",
+      "express": "Express",
+      "mongodb": "MongoDB",
+      "node": "Node.js"
+    },
+    "education": {
+      "title": "Education",
+      "js": "JavaScript",
+      "frontend": "Frontend Development",
+      "backend": "Backend Development"
+    },
+    "certifications": {
+      "title": "Certifications",
+      "udemyJs": "https://www.udemy.com/certificate/UC-c5f6c583-1033-4670-8a3f-f0d58bb9bed1/",
+      "webDev": "https://verified.sertifier.com/en/verify/90012100016317/",
+      "react": "https://verified.sertifier.com/en/verify/45370841524901/",
+      "backend": "https://verified.sertifier.com/en/verify/97928880125438/"
+    }
+  },
+
+  "TechStack": {
+    "title": "Tech Stack"
+  },
+  "Projects": {
+    "title": "My Projects",
+    "items": {
+      "blog": {
+        "title": "Milestone-Blog-App",
+        "description": "Blog-App is a modern and fully responsive blogging platform built with React, MUI, and Redux Toolkit. It includes a custom Node.js, Express, and MongoDB backend with high performance. Users can create, edit, and manage blog posts with a clean and intuitive UI."
+      },
+      "movie": {
+        "title": "Movie-App",
+        "description": "Movie-App is a modern movie browsing application built with React, Tailwind CSS, and Firebase. Users can explore movies, view details, and add favorites using a clean and responsive interface."
+      },
+      "netflix": {
+        "title": "Netflix-App",
+        "description": "Netflix-App is a movie and TV show platform built with Next.js and Tailwind CSS. It offers dynamic pages, a smooth UI, and fast performance across all devices."
+      },
+      "stock": {
+        "title": "Stock-App",
+        "description": "Stock-App is an intuitive inventory management system that allows users to track products, brands, companies, sales, and purchases with ease."
+      }
+    }
+  },
+  "Email": {
+    "title": "Let's Connect",
+    "desc": "I'm always open to new opportunities, collaborations, and exciting projects. Let's connect and create something great together!",
+    "success": "Email sent successfully!",
+    "form": {
+      "email": "Your Email",
+      "emailPlaceholder": "Enter your email address",
+      "subject": "Subject",
+      "subjectPlaceholder": "Subject of your message",
+      "message": "Message",
+      "messagePlaceholder": "Let's talk about...",
+      "send": "Send Message"
+    }
+  },
+  "Footer": {
+    "rights": "All rights reserved."
+  }
+}

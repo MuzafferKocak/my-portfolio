@@ -4,8 +4,11 @@ import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 const HeroSection = () => {
+  const t = useTranslations("Hero");
+
   return (
     <section className="lg:py-10">
       <div className="grid grid-cols-1 sm:grid-cols-12">
@@ -17,19 +20,18 @@ const HeroSection = () => {
         >
           <h1 className="mb-4 text-4xl sm:text-4xl lg:text-5xl font-extrabold">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-green-800">
-              Hello, I am{" "}
+              {t("hello")}{" "}
             </span>
             <br />
             <TypeAnimation
               sequence={[
-                // Same substring at the start will only be typed out once, initially
-                "Muzaffer",
-                5000, // wait 1s before replacing "Mice" with "Hamsters"
-                "a Frontend Developer",
+                t("type1"),
                 5000,
-                "a Backend Developer",
+                t("type2"),
                 5000,
-                "a Full Stack Developer",
+                t("type3"),
+                5000,
+                t("type4"),
                 5000,
               ]}
               wrapper="span"
@@ -38,14 +40,13 @@ const HeroSection = () => {
               repeat={Infinity}
             />
           </h1>
-          <p className="text-[#adb7be] text-base sm:text-lg mb-5 lg:text-xl ">
-            I am a passionate <strong>Full Stack Developer</strong> specializing
-            in building modern web applications. With expertise in{" "}
-            <strong>React, Next.js, Express, MongoDB, and Node.js</strong>, I
-            create scalable and user-friendly solutions. Let's build something
-            amazing together!
+
+          <p className="text-[#adb7be] text-base sm:text-lg mb-5 lg:text-xl">
+            {t("description")}
           </p>
+
           <div className="flex flex-col sm:flex-row gap-3">
+            {/* Download CV EN */}
             <Link
               href="/cv/MuzafferKocak.pdf"
               target="_blank"
@@ -60,9 +61,11 @@ const HeroSection = () => {
                   alt="download-icon"
                   className="filter invert"
                 />
-                Download CV (EN)
+                {t("cv_en")}
               </span>
             </Link>
+
+            {/* Download CV DE */}
             <Link
               href="/cv/MuzafferKocak_DE.pdf"
               target="_blank"
@@ -77,11 +80,13 @@ const HeroSection = () => {
                   alt="download-icon"
                   className="filter invert"
                 />
-                Download CV (DE)
+                {t("cv_de")}
               </span>
             </Link>
           </div>
         </motion.div>
+
+        {/* PROFILE IMAGE */}
         <div className="col-span-4 place-self-center mt-4 lg:mt-0">
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
@@ -92,6 +97,7 @@ const HeroSection = () => {
             <Image
               src="/images/me.jpeg"
               alt="image"
+              priority
               className="mix-blend-difference rounded-full absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
               width={300}
               height={300}

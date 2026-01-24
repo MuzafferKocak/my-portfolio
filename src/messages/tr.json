@@ -1,0 +1,92 @@
+{
+  "Navbar": {
+    "about": "Hakkımda",
+    "skills": "Yetenekler",
+    "projects": "Projeler",
+    "contact": "İletişim"
+  },
+
+  "Hero": {
+    "hello": "Merhaba, ben",
+    "type1": "Muzaffer",
+    "type2": "Frontend Geliştirici",
+    "type3": "Backend Geliştirici",
+    "type4": "Full-Stack Geliştirici",
+    "description": "Modern web uygulamalarına odaklanan tutkulu bir Full-Stack geliştiricisiyim. React, Next.js, Express, MongoDB ve Node.js konularında deneyimliyim. Ölçeklenebilir ve kullanıcı dostu çözümler üretmeyi seviyorum. Haydi birlikte harika bir şeyler ortaya çıkaralım!",
+    "cv_en": "CV indir (EN)",
+    "cv_de": "CV indir (DE)"
+  },
+
+  "About": {
+    "title": "Hakkımda",
+    "description1": "Etkileşimli ve duyarlı web uygulamalarına odaklanan tutkulu bir Full-Stack geliştiricisiyim. Uzmanlık alanlarım JavaScript, React, Next.js, Redux, Node.js, Express, MongoDB, Sequelize, HTML, CSS, Tailwind, MUI, Bootstrap ve Git’ten oluşuyor.",
+    "description2": "Zorlukları severim ve her zaman yeni şeyler öğrenmeye açığım. İşbirliği benim için önemli ve dinamik ekiplerde çalışıp yenilikçi projelere katkı sağlamaktan büyük keyif alıyorum.",
+    "description3": "CNC işleme ve mühendislik geçmişimin üzerine yazılım geliştirme tutkumu ekledim. Bu çeşitlilik, problemlere farklı bir bakış açısıyla yaklaşmamı sağlıyor.",
+    "skills": {
+      "title": "Yetenekler",
+      "react": "React",
+      "js": "JavaScript",
+      "express": "Express",
+      "mongodb": "MongoDB",
+      "node": "Node.js"
+    },
+    "education": {
+      "title": "Eğitim",
+      "js": "JavaScript",
+      "frontend": "Frontend Geliştirme",
+      "backend": "Backend Geliştirme"
+    },
+    "certifications": {
+      "title": "Sertifikalar",
+      "udemyJs": "https://www.udemy.com/certificate/UC-c5f6c583-1033-4670-8a3f-f0d58bb9bed1/",
+      "webDev": "https://verified.sertifier.com/en/verify/90012100016317/",
+      "react": "https://verified.sertifier.com/en/verify/45370841524901/",
+      "backend": "https://verified.sertifier.com/en/verify/97928880125438/"
+    }
+  },
+
+  "TechStack": {
+    "title": "Teknolojiler"
+  },
+
+  "Projects": {
+    "title": "Projelerim",
+    "items": {
+      "blog": {
+        "title": "Milestone Blog Uygulaması",
+        "description": "Modern ve tamamen responsive bir blog platformudur. React, MUI ve Redux Toolkit ile geliştirilmiştir. Backend Node.js, Express ve MongoDB ile oluşturulmuştur. Kullanıcılar blog yazıları oluşturabilir, düzenleyebilir ve yönetebilir."
+      },
+      "movie": {
+        "title": "Movie Uygulaması",
+        "description": "React, Tailwind CSS ve Firebase ile oluşturulmuş modern bir film uygulaması. Kullanıcılar filmleri keşfedebilir, detayları görebilir ve favorilere ekleyebilir."
+      },
+      "netflix": {
+        "title": "Netflix Klon Uygulaması",
+        "description": "Next.js ve Tailwind CSS ile geliştirilen film–dizi platformu. Dinamik sayfalar, akıcı arayüz ve tüm cihazlarda yüksek performans sunar."
+      },
+      "stock": {
+        "title": "Stok Yönetim Uygulaması",
+        "description": "Kullanıcıların ürünleri, markaları, şirketleri, satış ve alış işlemlerini verimli bir şekilde yönetmesine olanak tanıyan bir stok yönetim sistemi."
+      }
+    }
+  },
+
+  "Email": {
+    "title": "İletişime Geçelim",
+    "desc": "Yeni fırsatlar, işbirlikleri ve heyecan verici projelere her zaman açığım. Haydi iletişime geçelim ve birlikte harika işler yapalım!",
+    "success": "E-posta başarıyla gönderildi!",
+    "form": {
+      "email": "E-posta",
+      "emailPlaceholder": "E-posta adresinizi girin",
+      "subject": "Konu",
+      "subjectPlaceholder": "Mesajınızın konusu",
+      "message": "Mesaj",
+      "messagePlaceholder": "Konuşalım...",
+      "send": "Mesaj Gönder"
+    }
+  },
+
+  "Footer": {
+    "rights": "Tüm hakları saklıdır."
+  }
+}

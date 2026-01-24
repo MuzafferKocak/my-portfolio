@@ -1,0 +1,88 @@
+{
+  "Navbar": {
+    "about": "Über mich",
+    "skills": "Fähigkeiten",
+    "projects": "Projekte",
+    "contact": "Kontakt"
+  },
+
+  "Hero": {
+    "hello": "Hallo, ich bin",
+    "type1": "Muzaffer",
+    "type2": "ein Frontend-Entwickler",
+    "type3": "ein Backend-Entwickler",
+    "type4": "ein Full-Stack-Entwickler",
+    "description": "Ich bin ein leidenschaftlicher Full-Stack-Entwickler, spezialisiert auf moderne Webanwendungen. Mit Erfahrung in React, Next.js, Express, MongoDB und Node.js entwickle ich skalierbare und benutzerfreundliche Lösungen. Lass uns gemeinsam etwas Großartiges schaffen!",
+    "cv_en": "Lebenslauf herunterladen (EN)",
+    "cv_de": "Lebenslauf herunterladen (DE)"
+  },
+
+  "About": {
+    "title": "Über mich",
+    "description1": "Ich bin ein leidenschaftlicher Full-Stack-Webentwickler mit Fokus auf interaktive und responsive Webanwendungen. Meine Expertise umfasst JavaScript, React, Next.js, Redux, Node.js, Express, MongoDB, Sequelize, HTML, CSS, Tailwind, MUI, Bootstrap und Git.",
+    "description2": "Ich liebe Herausforderungen und bin stets bereit, mein Wissen zu erweitern. Zusammenarbeit ist der Schlüssel zu großartigen Anwendungen, und ich freue mich, zu innovativen Projekten beizutragen und in einem dynamischen Umfeld zu wachsen.",
+    "description3": "Nach meinem Hintergrund in CNC-Bearbeitung und Ingenieurwesen nutze ich nun meine Leidenschaft für Problemlösungen in der Full-Stack-Entwicklung. Diese vielfältige Erfahrung gibt mir eine einzigartige Perspektive bei der Bewältigung von Herausforderungen in der Technologie.",
+    "skills": {
+      "title": "Fähigkeiten",
+      "react": "React",
+      "js": "JavaScript",
+      "express": "Express",
+      "mongodb": "MongoDB",
+      "node": "Node.js"
+    },
+    "education": {
+      "title": "Ausbildung",
+      "js": "JavaScript",
+      "frontend": "Frontend-Entwicklung",
+      "backend": "Backend-Entwicklung"
+    },
+    "certifications": {
+      "title": "Zertifikate",
+      "udemyJs": "https://www.udemy.com/certificate/UC-c5f6c583-1033-4670-8a3f-f0d58bb9bed1/",
+      "webDev": "https://verified.sertifier.com/en/verify/90012100016317/",
+      "react": "https://verified.sertifier.com/en/verify/45370841524901/",
+      "backend": "https://verified.sertifier.com/en/verify/97928880125438/"
+    }
+  },
+  "TechStack": {
+    "title": "Technologien"
+  },
+  "Projects": {
+    "title": "Meine Projekte",
+    "items": {
+      "blog": {
+        "title": "Milestone-Blog-App",
+        "description": "Blog-App ist eine moderne und vollständig responsive Blogging-Plattform, entwickelt mit React, MUI und Redux Toolkit. Das Backend basiert auf Node.js, Express und MongoDB und bietet hohe Leistung. Benutzer können Blogposts erstellen, bearbeiten und verwalten – alles mit einer klaren und intuitiven Benutzeroberfläche."
+      },
+      "movie": {
+        "title": "Movie-App",
+        "description": "Movie-App ist eine moderne Film-App, entwickelt mit React, Tailwind CSS und Firebase. Benutzer können Filme durchsuchen, Details ansehen und Favoriten speichern – alles in einer schnellen und responsiven Oberfläche."
+      },
+      "netflix": {
+        "title": "Netflix-App",
+        "description": "Netflix-App ist eine Film- und Serienplattform, erstellt mit Next.js und Tailwind CSS. Sie bietet dynamische Seiten, eine flüssige Benutzeroberfläche und hervorragende Leistung auf allen Geräten."
+      },
+      "stock": {
+        "title": "Stock-App",
+        "description": "Stock-App ist ein intuitives Bestandsverwaltungssystem, das Benutzern ermöglicht, Produkte, Marken, Unternehmen, Verkäufe und Einkäufe effizient zu verwalten."
+      }
+    }
+  },
+  "Email": {
+    "title": "Lass uns verbinden",
+    "desc": "Ich bin immer offen für neue Chancen, Zusammenarbeit und spannende Projekte. Lass uns verbinden und gemeinsam etwas Großartiges schaffen!",
+    "success": "E-Mail wurde erfolgreich gesendet!",
+    "form": {
+      "email": "Ihre E-Mail",
+      "emailPlaceholder": "Geben Sie Ihre E-Mail-Adresse ein",
+      "subject": "Betreff",
+      "subjectPlaceholder": "Betreff Ihrer Nachricht",
+      "message": "Nachricht",
+      "messagePlaceholder": "Lass uns darüber reden...",
+      "send": "Nachricht senden"
+    }
+  },
+  "Footer": {
+    "rights": "Alle Rechte vorbehalten."
+  }
+}
