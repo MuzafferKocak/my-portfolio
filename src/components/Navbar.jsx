@@ -14,9 +14,8 @@ const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
   const t = useTranslations("Navbar");
 
- const params = typeof window !== "undefined" ? useParams() : {};
-const locale = typeof params?.locale === "string" ? params.locale : "en";
-
+  const params = useParams();
+  const locale = typeof params?.locale === "string" ? params.locale : "en";
 
   const navLinks = [
     { title: t("about"), path: "#about" },

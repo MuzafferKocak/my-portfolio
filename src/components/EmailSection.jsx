@@ -8,25 +8,41 @@ import { useTranslations } from "next-intl";
 
 const EmailSection = () => {
   const [emailSubmitted, setEmailSubmitted] = useState(false);
+  const [isSending, setIsSending] = useState(false);
+  const [hasError, setHasError] = useState(false);
 
   const t = useTranslations("Email");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if (isSending) return;
+
     const data = {
       email: e.target.email.value,
       subject: e.target.subject.value,
       message: e.target.message.value,
     };
 
-    const JSONdata = JSON.stringify(data);
-    const response = await fetch("/api/send", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSONdata,
-    });
+    setIsSending(true);
+    setHasError(false);
 
-    if (response.status === 200) setEmailSubmitted(true);
+    try {
+      const response = await fetch("/api/send", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+
+      if (response.ok) {
+        setEmailSubmitted(true);
+      } else {
+        setHasError(true);
+      }
+    } catch {
+      setHasError(true);
+    } finally {
+      setIsSending(false);
+    }
   };
 
   return (
@@ -120,6 +136,7 @@ const EmailSection = () => {
               </label>
               <textarea
                 name="message"
+                required
                 placeholder={t("form.messagePlaceholder")}
                 className="bg-[#121212] border border-[#33353f] placeholder-[#9ca2a9]
                 text-gray-100 text-sm rounded-lg block w-full p-2.5"
@@ -127,11 +144,17 @@ const EmailSection = () => {
             </div>
 
             {/* Button */}
+            {hasError && (
+              <p role="alert" className="text-red-400 text-sm mb-3">
+                {t("error")}
+              </p>
+            )}
             <button
               type="submit"
-              className="bg-green-400 hover:bg-green-600 text-white font-medium py-2.5 px-5 rounded-lg w-full"
+              disabled={isSending}
+              className="bg-green-400 hover:bg-green-600 text-white font-medium py-2.5 px-5 rounded-lg w-full disabled:opacity-60 disabled:cursor-not-allowed"
             >
-              {t("form.send")}
+              {isSending ? t("form.sending") : t("form.send")}
             </button>
           </form>
         )}

@@ -84,6 +84,7 @@
     "title": "İletişime Geçelim",
     "desc": "Yeni fırsatlar, işbirlikleri ve heyecan verici projelere her zaman açığım. Haydi iletişime geçelim ve birlikte harika işler yapalım!",
     "success": "E-posta başarıyla gönderildi!",
+    "error": "Bir şeyler ters gitti. Lütfen daha sonra tekrar deneyin.",
     "form": {
       "email": "E-posta",
       "emailPlaceholder": "E-posta adresinizi girin",
@@ -91,7 +92,8 @@
       "subjectPlaceholder": "Mesajınızın konusu",
       "message": "Mesaj",
       "messagePlaceholder": "Konuşalım...",
-      "send": "Mesaj Gönder"
+      "send": "Mesaj Gönder",
+      "sending": "Gönderiliyor..."
     }
   },
 

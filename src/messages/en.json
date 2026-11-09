@@ -80,6 +80,7 @@
     "title": "Let's Connect",
     "desc": "I'm always open to new opportunities, collaborations, and exciting projects. Let's connect and create something great together!",
     "success": "Email sent successfully!",
+    "error": "Something went wrong. Please try again later.",
     "form": {
       "email": "Your Email",
       "emailPlaceholder": "Enter your email address",
@@ -87,7 +88,8 @@
       "subjectPlaceholder": "Subject of your message",
       "message": "Message",
       "messagePlaceholder": "Let's talk about...",
-      "send": "Send Message"
+      "send": "Send Message",
+      "sending": "Sending..."
     }
   },
   "Footer": {

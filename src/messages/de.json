@@ -81,6 +81,7 @@
     "title": "Lass uns verbinden",
     "desc": "Ich bin immer offen für neue Chancen, Zusammenarbeit und spannende Projekte. Lass uns verbinden und gemeinsam etwas Großartiges schaffen!",
     "success": "E-Mail wurde erfolgreich gesendet!",
+    "error": "Etwas ist schiefgelaufen. Bitte versuche es später noch einmal.",
     "form": {
       "email": "Ihre E-Mail",
       "emailPlaceholder": "Geben Sie Ihre E-Mail-Adresse ein",
@@ -88,7 +89,8 @@
       "subjectPlaceholder": "Betreff Ihrer Nachricht",
       "message": "Nachricht",
       "messagePlaceholder": "Lass uns darüber reden...",
-      "send": "Nachricht senden"
+      "send": "Nachricht senden",
+      "sending": "Wird gesendet..."
     }
   },
   "Footer": {

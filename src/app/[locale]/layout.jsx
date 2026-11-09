@@ -12,8 +12,15 @@ export default async function LocaleLayout({ children, params }) {
   const messages = messagesMap[locale] || messagesMap["en"];
 
   return (
-    <NextIntlClientProvider locale={locale} messages={messages}>
-      {children}
-    </NextIntlClientProvider>
+    <html lang={locale in messagesMap ? locale : "en"}>
+      <head>
+        <link rel="icon" href="/favicon.ico" />
+      </head>
+      <body>
+        <NextIntlClientProvider locale={locale} messages={messages}>
+          {children}
+        </NextIntlClientProvider>
+      </body>
+    </html>
   );
 }
