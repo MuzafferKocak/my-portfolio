@@ -1,8 +1,21 @@
-import React from "react";
 import { CodeBracketIcon, EyeIcon } from "@heroicons/react/24/solid";
 import Link from "next/link";
 
-const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
+type ProjectCardProps = {
+  imgUrl: string;
+  title: string;
+  description: string;
+  gitUrl: string;
+  previewUrl: string;
+};
+
+export default function ProjectCard({
+  imgUrl,
+  title,
+  description,
+  gitUrl,
+  previewUrl,
+}: ProjectCardProps) {
   return (
     <div className="border rounded-lg lg:bg-[#121212] border-[#33353F]">
       <div
@@ -35,6 +48,4 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
       </div>
     </div>
   );
-};
-
-export default ProjectCard;
+}

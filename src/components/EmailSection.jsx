@@ -5,6 +5,8 @@ import LinkedinIcon from "../../public/linkedin-icon.svg";
 import Link from "next/link";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import Button from "./ui/Button";
+import Input from "./ui/Input";
 
 const EmailSection = () => {
   const [emailSubmitted, setEmailSubmitted] = useState(false);
@@ -100,48 +102,31 @@ const EmailSection = () => {
         ) : (
           <form className="flex flex-col" onSubmit={handleSubmit}>
             {/* Email */}
-            <div className="mb-4">
-              <label className="text-white block mb-1 text-sm font-medium">
-                {t("form.email")}
-              </label>
-              <input
-                name="email"
-                type="email"
-                required
-                placeholder={t("form.emailPlaceholder")}
-                className="bg-[#121212] border border-[#33353f] placeholder-[#9ca2a9]
-                text-gray-100 text-sm rounded-lg block w-full p-2.5"
-              />
-            </div>
+            <Input
+              label={t("form.email")}
+              name="email"
+              type="email"
+              required
+              placeholder={t("form.emailPlaceholder")}
+            />
 
             {/* Subject */}
-            <div className="mb-4">
-              <label className="text-white block mb-1 text-sm font-medium">
-                {t("form.subject")}
-              </label>
-              <input
-                name="subject"
-                type="text"
-                required
-                placeholder={t("form.subjectPlaceholder")}
-                className="bg-[#121212] border border-[#33353f] placeholder-[#9ca2a9]
-                text-gray-100 text-sm rounded-lg block w-full p-2.5"
-              />
-            </div>
+            <Input
+              label={t("form.subject")}
+              name="subject"
+              type="text"
+              required
+              placeholder={t("form.subjectPlaceholder")}
+            />
 
             {/* Message */}
-            <div className="mb-4">
-              <label className="text-white block mb-1 text-sm font-medium">
-                {t("form.message")}
-              </label>
-              <textarea
-                name="message"
-                required
-                placeholder={t("form.messagePlaceholder")}
-                className="bg-[#121212] border border-[#33353f] placeholder-[#9ca2a9]
-                text-gray-100 text-sm rounded-lg block w-full p-2.5"
-              />
-            </div>
+            <Input
+              multiline
+              label={t("form.message")}
+              name="message"
+              required
+              placeholder={t("form.messagePlaceholder")}
+            />
 
             {/* Button */}
             {hasError && (
@@ -149,13 +134,9 @@ const EmailSection = () => {
                 {t("error")}
               </p>
             )}
-            <button
-              type="submit"
-              disabled={isSending}
-              className="bg-green-400 hover:bg-green-600 text-white font-medium py-2.5 px-5 rounded-lg w-full disabled:opacity-60 disabled:cursor-not-allowed"
-            >
+            <Button type="submit" disabled={isSending}>
               {isSending ? t("form.sending") : t("form.send")}
-            </button>
+            </Button>
           </form>
         )}
       </div>
