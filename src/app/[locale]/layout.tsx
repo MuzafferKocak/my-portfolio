@@ -1,18 +1,25 @@
-import { NextIntlClientProvider } from "next-intl";
-import en from "../../messages/en.json";
-import de from "../../messages/de.json";
-import tr from "../../messages/tr.json";
+import type { ReactNode } from "react";
+import { hasLocale, NextIntlClientProvider } from "next-intl";
+import { getMessages } from "next-intl/server";
+import { routing } from "@/i18n/routing";
 
-const messagesMap = { en, de, tr };
+type LocaleLayoutProps = {
+  children: ReactNode;
+  params: Promise<{ locale: string }>;
+};
 
-export default async function LocaleLayout({ children, params }) {
-  const resolvedParams = await params;
-  const locale = resolvedParams?.locale || "en";
-
-  const messages = messagesMap[locale] || messagesMap["en"];
+export default async function LocaleLayout({
+  children,
+  params,
+}: LocaleLayoutProps) {
+  const { locale: requested } = await params;
+  const locale = hasLocale(routing.locales, requested)
+    ? requested
+    : routing.defaultLocale;
+  const messages = await getMessages({ locale });
 
   return (
-    <html lang={locale in messagesMap ? locale : "en"}>
+    <html lang={locale}>
       <head>
         <link rel="icon" href="/favicon.ico" />
       </head>
