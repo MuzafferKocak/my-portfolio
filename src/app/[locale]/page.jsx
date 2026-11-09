@@ -2,9 +2,9 @@
 
 import AboutSection from "@/components/AboutSection";
 import EmailSection from "@/components/EmailSection";
-import Footer from "@/components/Footer";
+import Footer from "@/components/layout/Footer";
 import HeroSection from "@/components/HeroSection";
-import Navbar from "@/components/Navbar";
+import Navbar from "@/components/layout/Navbar";
 import ProjectsSection from "@/components/ProjectsSection";
 import TechStack from "@/components/TechStack";
 

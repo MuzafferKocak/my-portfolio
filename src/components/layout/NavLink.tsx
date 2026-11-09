@@ -1,8 +1,14 @@
 "use client";
-import React from "react";
+
 import Link from "next/link";
 
-const NavLink = ({ href, title, onClick }) => {
+type NavLinkProps = {
+  href: string;
+  title: string;
+  onClick?: () => void;
+};
+
+export default function NavLink({ href, title, onClick }: NavLinkProps) {
   return (
     <Link
       href={href}
@@ -12,6 +18,4 @@ const NavLink = ({ href, title, onClick }) => {
       {title}
     </Link>
   );
-};
-
-export default NavLink;
+}

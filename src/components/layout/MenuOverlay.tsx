@@ -1,13 +1,20 @@
 "use client";
-import React from "react";
+
 import NavLink from "./NavLink";
 import LanguageSwitcher from "./LanguageSwitcher";
 
-const MenuOverlay = ({ links, closeMenu }) => {
+export type NavItem = { title: string; path: string };
+
+type MenuOverlayProps = {
+  links: NavItem[];
+  closeMenu: () => void;
+};
+
+export default function MenuOverlay({ links, closeMenu }: MenuOverlayProps) {
   return (
     <ul className="flex flex-col py-4 items-center space-y-1">
-      {links.map((link, index) => (
-        <li key={index}>
+      {links.map((link) => (
+        <li key={link.path}>
           <NavLink href={link.path} title={link.title} onClick={closeMenu} />
         </li>
       ))}
@@ -16,6 +23,4 @@ const MenuOverlay = ({ links, closeMenu }) => {
       </li>
     </ul>
   );
-};
-
-export default MenuOverlay;
+}
