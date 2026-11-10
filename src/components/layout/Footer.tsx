@@ -6,24 +6,18 @@ export default function Footer() {
   const t = useTranslations("Footer");
 
   return (
-    <footer className="footer border z-10 border-t-border border-l-transparent border-r-transparent text-foreground bg-secondary bg-opacity-100">
-      <div className="container p-8 flex items-center justify-end gap-4">
-        <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-accent">
-          <Image
-            src="/images/mek.jpeg"
-            alt="Logo"
-            width={48}
-            height={48}
-            className="object-cover"
-            style={{
-              objectFit: "cover",
-              aspectRatio: "1/1",
-            }}
-          />
-        </div>
+    <footer className="border-t border-border bg-secondary text-foreground">
+      <div className="container mx-auto flex items-center justify-end gap-4 px-4 py-8">
+        <Image
+          src="/images/mek.jpeg"
+          alt="MEK"
+          width={40}
+          height={44}
+          className="h-11 w-auto rounded-sm"
+        />
 
         <p className="text-muted">
-          &copy; {currentYear} {t("rights")}
+          &copy; {currentYear} Muzaffer Kocak. {t("rights")}
         </p>
       </div>
     </footer>

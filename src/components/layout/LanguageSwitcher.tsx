@@ -22,6 +22,7 @@ export default function LanguageSwitcher() {
     <div className="relative">
       <button
         type="button"
+        className="block"
         onClick={() => setOpen(!open)}
         aria-label="Language"
         aria-expanded={open}

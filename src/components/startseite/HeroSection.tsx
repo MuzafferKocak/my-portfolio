@@ -2,27 +2,31 @@
 
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
-import { motion } from "framer-motion";
+import { motion, MotionConfig } from "framer-motion";
 import { useTranslations } from "next-intl";
 import Button from "@/components/ui/Button";
+import PlateFrame from "@/components/ui/PlateFrame";
+
+// Die einzige Einblendung der Seite: Text und Foto kommen sanft nacheinander.
+// Mit MotionConfig reducedMotion="user" wird bei "Bewegung reduzieren" im
+// System nur eingeblendet und nicht verschoben.
+const enter = (delay: number) => ({
+  initial: { opacity: 0, y: 16 },
+  animate: { opacity: 1, y: 0 },
+  transition: { duration: 0.7, delay, ease: "easeOut" as const },
+});
 
 export default function HeroSection() {
   const t = useTranslations("Hero");
 
   return (
-    <section className="lg:py-10">
-      <div className="grid grid-cols-1 sm:grid-cols-12">
-        <motion.div
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-          className="col-span-7 place-self-center text-center sm:text-left"
-        >
-          <h1 className="mb-4 text-4xl sm:text-4xl lg:text-5xl font-extrabold">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent to-secondary">
-              {t("hello")}{" "}
+    <MotionConfig reducedMotion="user">
+      <section className="grid items-center gap-12 pb-16 pt-6 lg:grid-cols-12 lg:gap-8 lg:pb-24 lg:pt-16">
+        <motion.div className="lg:col-span-7" {...enter(0)}>
+          <h1 className="text-foreground">
+            <span className="block text-2xl text-muted sm:text-3xl">
+              {t("hello")}
             </span>
-            <br />
             <TypeAnimation
               sequence={[
                 t("type1"),
@@ -36,45 +40,45 @@ export default function HeroSection() {
               ]}
               wrapper="span"
               speed={50}
-              style={{ fontSize: "3rem", display: "inline-block" }}
               repeat={Infinity}
+              className="mt-2 block min-h-[2.2em] text-4xl sm:text-5xl lg:text-6xl"
             />
           </h1>
 
-          <p className="text-muted text-base sm:text-lg mb-5 lg:text-xl">
+          <p className="mt-4 max-w-xl text-lg text-muted lg:text-xl">
             {t("description")}
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-3">
-            {/* Download CV EN */}
+          <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+            <Button href="#contact" variant="solid" className="sm:w-fit">
+              {t("cta")}
+            </Button>
+
             <Button
               href="/cv/MuzafferKocak.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-3"
             >
               <Image
                 src="/download-icon.svg"
                 width={24}
                 height={24}
-                alt="download-icon"
+                alt=""
                 className="invert group-hover:invert-0"
               />
               {t("cv_en")}
             </Button>
 
-            {/* Download CV DE */}
             <Button
               href="/cv/MuzafferKocak_DE.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-3"
             >
               <Image
                 src="/download-icon.svg"
                 width={24}
                 height={24}
-                alt="download-icon"
+                alt=""
                 className="invert group-hover:invert-0"
               />
               {t("cv_de")}
@@ -82,25 +86,21 @@ export default function HeroSection() {
           </div>
         </motion.div>
 
-        {/* PROFILE IMAGE */}
-        <div className="col-span-4 place-self-center mt-4 lg:mt-0">
-          <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-            className="rounded-full border-2 border-accent-dark bg-secondary w-[200px] h-[200px] sm:w-[250px] sm:h-[250px] lg:w-[370px] lg:h-[370px] relative"
-          >
+        {/* Foto in der Platte */}
+        <motion.div className="lg:col-span-5" {...enter(0.2)}>
+          <PlateFrame className="mx-auto max-w-sm lg:ml-auto lg:mr-0">
             <Image
               src="/images/me.jpeg"
-              alt="image"
+              alt={t("photoAlt")}
               priority
-              className="mix-blend-difference rounded-full absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              width={300}
-              height={300}
+              width={400}
+              height={400}
+              sizes="(min-width: 1024px) 360px, 80vw"
+              className="aspect-[4/5] w-full rounded-sm object-cover"
             />
-          </motion.div>
-        </div>
-      </div>
-    </section>
+          </PlateFrame>
+        </motion.div>
+      </section>
+    </MotionConfig>
   );
 }

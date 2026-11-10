@@ -11,7 +11,9 @@
     "type2": "a Frontend Developer",
     "type3": "a Backend Developer",
     "type4": "a Full Stack Developer",
-    "description": "I am a passionate Full Stack Developer specializing in building modern web applications. With expertise in React, Next.js, Express, MongoDB, and Node.js, I create scalable and user-friendly solutions. Let's build something amazing together!",
+    "description": "I build modern web apps with React, Next.js, Node.js and MongoDB, from the interface to the database. I'm open to remote roles worldwide.",
+    "cta": "Get in touch",
+    "photoAlt": "Portrait of Muzaffer Kocak",
     "cv_en": "Download CV (EN)",
     "cv_de": "Download CV (DE)"
   },

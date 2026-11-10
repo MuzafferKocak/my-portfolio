@@ -12,7 +12,9 @@
     "type2": "Frontend Geliştirici",
     "type3": "Backend Geliştirici",
     "type4": "Full-Stack Geliştirici",
-    "description": "Modern web uygulamalarına odaklanan tutkulu bir Full-Stack geliştiricisiyim. React, Next.js, Express, MongoDB ve Node.js konularında deneyimliyim. Ölçeklenebilir ve kullanıcı dostu çözümler üretmeyi seviyorum. Haydi birlikte harika bir şeyler ortaya çıkaralım!",
+    "description": "React, Next.js, Node.js ve MongoDB ile arayüzden veritabanına kadar modern web uygulamaları geliştiriyorum. Dünya genelinde uzaktan çalışmaya açığım.",
+    "cta": "İletişime geç",
+    "photoAlt": "Muzaffer Kocak portresi",
     "cv_en": "CV indir (EN)",
     "cv_de": "CV indir (DE)"
   },

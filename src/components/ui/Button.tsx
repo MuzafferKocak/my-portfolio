@@ -26,7 +26,7 @@ type NativeButtonProps = CommonProps & { href?: undefined } & Omit<
 type ButtonProps = LinkButtonProps | NativeButtonProps;
 
 const solidClasses =
-  "bg-accent hover:bg-accent-dark text-ink font-medium py-2.5 px-5 rounded-lg w-full disabled:opacity-60 disabled:cursor-not-allowed";
+  "bg-accent hover:bg-accent-dark text-ink font-medium py-2.5 px-6 rounded-full w-full disabled:opacity-60 disabled:cursor-not-allowed";
 
 // Rahmen mit Farbverlauf: außen der Rahmen, innen der dunkle Hintergrund
 const outlineOuterClasses =
@@ -40,7 +40,20 @@ function isLinkButton(props: ButtonProps): props is LinkButtonProps {
 
 export default function Button(props: ButtonProps) {
   if (isLinkButton(props)) {
-    const { variant: _variant, className = "", children, ...rest } = props;
+    // Links sind standardmäßig Rahmen-Buttons, mit variant="solid" Messing-Buttons
+    const { variant = "outline", className = "", children, ...rest } = props;
+
+    if (variant === "solid") {
+      return (
+        <Link
+          className={`${solidClasses} inline-block text-center ${className}`}
+          {...rest}
+        >
+          {children}
+        </Link>
+      );
+    }
+
     return (
       <Link className={`${outlineOuterClasses} ${className}`} {...rest}>
         <span className={outlineInnerClasses}>{children}</span>

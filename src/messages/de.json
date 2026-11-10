@@ -12,9 +12,11 @@
     "type2": "ein Frontend-Entwickler",
     "type3": "ein Backend-Entwickler",
     "type4": "ein Full-Stack-Entwickler",
-    "description": "Ich bin ein leidenschaftlicher Full-Stack-Entwickler, spezialisiert auf moderne Webanwendungen. Mit Erfahrung in React, Next.js, Express, MongoDB und Node.js entwickle ich skalierbare und benutzerfreundliche Lösungen. Lass uns gemeinsam etwas Großartiges schaffen!",
-    "cv_en": "Lebenslauf herunterladen (EN)",
-    "cv_de": "Lebenslauf herunterladen (DE)"
+    "description": "Ich entwickle moderne Web-Apps mit React, Next.js, Node.js und MongoDB, von der Oberfläche bis zur Datenbank. Ich bin offen für Remote-Stellen weltweit.",
+    "cta": "Kontakt aufnehmen",
+    "photoAlt": "Porträt von Muzaffer Kocak",
+    "cv_en": "Lebenslauf (EN)",
+    "cv_de": "Lebenslauf (DE)"
   },
 
   "About": {
