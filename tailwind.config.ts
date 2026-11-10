@@ -25,7 +25,10 @@ const config: Config = {
       foreground: color("foreground"),
       muted: color("muted"),
       border: color("border"),
-      danger: color("danger"),
+      danger: {
+        DEFAULT: color("danger"),
+        dark: color("danger-dark"),
+      },
     },
     fontFamily: {
       sans: ["var(--font-body)", "system-ui", "sans-serif"],
