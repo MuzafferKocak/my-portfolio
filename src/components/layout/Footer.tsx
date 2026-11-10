@@ -10,7 +10,7 @@ export default function Footer() {
       <div className="container p-8 flex items-center justify-end gap-4">
         <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-[#dde775]">
           <Image
-            src="/images/mek.png"
+            src="/images/mek.jpeg"
             alt="Logo"
             width={48}
             height={48}

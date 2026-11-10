@@ -32,7 +32,7 @@ export default function Navbar() {
         {/* Logo */}
         <Link href={`/${locale}`} onClick={handleLinkClick}>
           <Image
-            src="/images/mek.png"
+            src="/images/mek.jpeg"
             alt="Logo"
             priority
             width={48}
