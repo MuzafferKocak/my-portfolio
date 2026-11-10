@@ -30,9 +30,9 @@ const solidClasses =
 
 // Rahmen mit Farbverlauf: außen der Rahmen, innen der dunkle Hintergrund
 const outlineOuterClasses =
-  "px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-accent to-secondary hover:bg-accent-dark text-ink";
+  "group px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-accent to-secondary text-foreground";
 const outlineInnerClasses =
-  "flex items-center gap-3 bg-secondary hover:bg-accent rounded-full px-5 py-2";
+  "flex items-center gap-3 bg-secondary text-foreground group-hover:bg-accent group-hover:text-ink rounded-full px-5 py-2 transition-colors";
 
 function isLinkButton(props: ButtonProps): props is LinkButtonProps {
   return typeof props.href === "string";

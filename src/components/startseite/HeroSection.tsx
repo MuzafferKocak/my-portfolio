@@ -58,7 +58,7 @@ export default function HeroSection() {
                 width={24}
                 height={24}
                 alt="download-icon"
-                className="filter invert"
+                className="invert group-hover:invert-0"
               />
               {t("cv_en")}
             </Button>
@@ -75,7 +75,7 @@ export default function HeroSection() {
                 width={24}
                 height={24}
                 alt="download-icon"
-                className="filter invert"
+                className="invert group-hover:invert-0"
               />
               {t("cv_de")}
             </Button>
