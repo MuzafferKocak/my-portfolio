@@ -10,7 +10,7 @@ type TabId = "skills" | "education" | "certifications";
 
 type TabItem = { id: TabId; title: string; content: ReactNode };
 
-const linkClasses = "hover:text-green-400 hover:underline";
+const linkClasses = "hover:text-primary hover:underline";
 
 export default function AboutSection() {
   const [tab, setTab] = useState<TabId>("skills");
@@ -97,7 +97,7 @@ export default function AboutSection() {
   const activeTab = tabs.find((item) => item.id === tab) ?? tabs[0];
 
   return (
-    <section className="text-white scroll-mt-16" id="about">
+    <section className="text-foreground scroll-mt-16" id="about">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-10 sm:py-12 xl:px-6">
         <Image
           src="/images/computer.webp"
@@ -106,14 +106,14 @@ export default function AboutSection() {
           height={550}
         />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
-          <h2 className="text-4xl font-bold text-white mb-4">{t("title")}</h2>
-          <p className="text-[#adb7be] text-base lg:text-lg mb-1">
+          <h2 className="text-4xl font-bold text-foreground mb-4">{t("title")}</h2>
+          <p className="text-muted text-base lg:text-lg mb-1">
             {t("description1")}
           </p>
-          <p className="text-[#adb7be] text-base lg:text-lg mb-2">
+          <p className="text-muted text-base lg:text-lg mb-2">
             {t("description2")}
           </p>
-          <p className="text-[#adb7be] text-base lg:text-lg mb-4">
+          <p className="text-muted text-base lg:text-lg mb-4">
             {t("description3")}
           </p>
 

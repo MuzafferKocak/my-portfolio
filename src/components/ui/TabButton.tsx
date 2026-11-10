@@ -19,17 +19,17 @@ export default function TabButton({
   selectTab,
   children,
 }: TabButtonProps) {
-  const buttonClasses = active ? "text-white" : "text-[#ADB7BE]";
+  const buttonClasses = active ? "text-foreground" : "text-muted";
 
   return (
     <button type="button" onClick={selectTab}>
-      <p className={`mr-3 font-semibold hover:text-white ${buttonClasses}`}>
+      <p className={`mr-3 font-semibold hover:text-foreground ${buttonClasses}`}>
         {children}
       </p>
       <motion.div
         animate={active ? "active" : "default"}
         variants={variants}
-        className="h-[4px] bg-green-400 mt-2 mr-3"
+        className="h-[4px] bg-primary mt-2 mr-3"
       />
     </button>
   );

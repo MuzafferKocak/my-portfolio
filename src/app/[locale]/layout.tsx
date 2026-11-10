@@ -19,7 +19,7 @@ export default async function LocaleLayout({
   const messages = await getMessages({ locale });
 
   return (
-    <html lang={locale}>
+    <html lang={locale} data-scroll-behavior="smooth">
       <head>
         <link rel="icon" href="/favicon.ico" />
       </head>

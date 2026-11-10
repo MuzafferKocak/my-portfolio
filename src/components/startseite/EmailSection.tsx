@@ -50,7 +50,7 @@ export default function EmailSection() {
       <div
         className="
   bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))]
-  from-green-700 to-transparent
+  from-secondary to-transparent
   rounded-full
   blur-2xl
   absolute
@@ -59,13 +59,13 @@ export default function EmailSection() {
       ></div>
 
       <div>
-        <h5 className="text-xl font-bold text-white my-2">{t("title")}</h5>
+        <h5 className="text-xl font-bold text-foreground my-2">{t("title")}</h5>
 
-        <p className="text-[#adb7be] mb-4 max-w-md">{t("desc")}</p>
+        <p className="text-muted mb-4 max-w-md">{t("desc")}</p>
 
         <div className="flex flex-row gap-2">
           <Link href="https://github.com/MuzafferKocak" target="_blank">
-            <div className="w-12 h-12 bg-[#121212] rounded-lg flex items-center justify-center hover:bg-green-500 transition-all duration-300">
+            <div className="w-12 h-12 bg-surface rounded-lg flex items-center justify-center hover:bg-primary-dark transition-all duration-300">
               <Image
                 src="/github-icon.svg"
                 alt="GitHub Icon"
@@ -79,7 +79,7 @@ export default function EmailSection() {
             href="https://www.linkedin.com/in/muzaffer-kocak/"
             target="_blank"
           >
-            <div className="w-12 h-12 bg-[#121212] rounded-lg flex items-center justify-center hover:bg-green-500 transition-all duration-300">
+            <div className="w-12 h-12 bg-surface rounded-lg flex items-center justify-center hover:bg-primary-dark transition-all duration-300">
               <Image
                 src="/linkedin-icon.svg"
                 alt="Linkedin Icon"
@@ -93,7 +93,7 @@ export default function EmailSection() {
 
       <div>
         {emailSubmitted ? (
-          <p className="text-green-500 text-sm mt-2">{t("success")}</p>
+          <p className="text-primary-dark text-sm mt-2">{t("success")}</p>
         ) : (
           <form className="flex flex-col" onSubmit={handleSubmit}>
             <Input
@@ -121,7 +121,7 @@ export default function EmailSection() {
             />
 
             {hasError && (
-              <p role="alert" className="text-red-400 text-sm mb-3">
+              <p role="alert" className="text-danger text-sm mb-3">
                 {t("error")}
               </p>
             )}

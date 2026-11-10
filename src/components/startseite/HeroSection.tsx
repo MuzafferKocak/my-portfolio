@@ -19,7 +19,7 @@ export default function HeroSection() {
           className="col-span-7 place-self-center text-center sm:text-left"
         >
           <h1 className="mb-4 text-4xl sm:text-4xl lg:text-5xl font-extrabold">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-green-800">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
               {t("hello")}{" "}
             </span>
             <br />
@@ -41,7 +41,7 @@ export default function HeroSection() {
             />
           </h1>
 
-          <p className="text-[#adb7be] text-base sm:text-lg mb-5 lg:text-xl">
+          <p className="text-muted text-base sm:text-lg mb-5 lg:text-xl">
             {t("description")}
           </p>
 
@@ -88,7 +88,7 @@ export default function HeroSection() {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="rounded-full border-2 border-green-500 bg-[#121212] w-[200px] h-[200px] sm:w-[250px] sm:h-[250px] lg:w-[370px] lg:h-[370px] relative"
+            className="rounded-full border-2 border-primary-dark bg-surface w-[200px] h-[200px] sm:w-[250px] sm:h-[250px] lg:w-[370px] lg:h-[370px] relative"
           >
             <Image
               src="/images/me.jpeg"

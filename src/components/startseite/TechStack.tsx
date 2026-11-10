@@ -36,15 +36,15 @@ export default function TechStack() {
 
   return (
     <section id="skills" className="px-4 scroll-mt-20">
-      <h2 className="text-4xl font-bold text-center text-white mb-2 mt-3 md:mb-6">
+      <h2 className="text-4xl font-bold text-center text-foreground mb-2 mt-3 md:mb-6">
         {t("title")}
       </h2>
 
-      <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-4 border border-[#33353F] rounded-lg p-2">
+      <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-4 border border-border rounded-lg p-2">
         {skills.map((skill) => (
           <div
             key={skill.icon}
-            className="flex flex-col items-center p-2 bg-[#121212] border border-[#33353F] rounded-lg transition-transform duration-300 hover:rotate-6 hover:scale-105 hover:bg-[#2b2b2bab]"
+            className="flex flex-col items-center p-2 bg-surface border border-border rounded-lg transition-transform duration-300 hover:rotate-6 hover:scale-105 hover:bg-surface-alt"
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
@@ -52,7 +52,7 @@ export default function TechStack() {
               alt={`${skill.name} logo`}
               className="w-12 h-12"
             />
-            <p className="mt-2 text-white text-sm font-medium">{skill.name}</p>
+            <p className="mt-2 text-foreground text-sm font-medium">{skill.name}</p>
           </div>
         ))}
       </div>

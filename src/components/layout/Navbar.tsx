@@ -27,7 +27,7 @@ export default function Navbar() {
   const handleLinkClick = () => setNavbarOpen(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-10 border border-[#33353F] bg-[#121212] bg-opacity-100">
+    <nav className="fixed top-0 left-0 right-0 z-10 border border-border bg-surface bg-opacity-100">
       <div className="flex container flex-wrap items-center justify-between mx-auto px-4 py-3">
         {/* Logo */}
         <Link href={`/${locale}`} onClick={handleLinkClick}>
@@ -37,7 +37,7 @@ export default function Navbar() {
             priority
             width={48}
             height={48}
-            className="object-cover rounded-full border-2 border-[#dde775]"
+            className="object-cover rounded-full border-2 border-accent"
             style={{ objectFit: "cover", aspectRatio: "1/1" }}
           />
         </Link>
@@ -49,7 +49,7 @@ export default function Navbar() {
             onClick={() => setNavbarOpen(!navbarOpen)}
             aria-label="Menu"
             aria-expanded={navbarOpen}
-            className="flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white"
+            className="flex items-center px-3 py-2 border rounded border-muted text-muted hover:text-foreground hover:border-foreground"
           >
             {navbarOpen ? (
               <XMarkIcon className="h-5 w-5" />
@@ -78,7 +78,7 @@ export default function Navbar() {
 
       {/* Mobile overlay menu */}
       {navbarOpen && (
-        <div className="md:hidden bg-[#121212] border-t border-[#33353F]">
+        <div className="md:hidden bg-surface border-t border-border">
           <MenuOverlay links={navLinks} closeMenu={handleLinkClick} />
         </div>
       )}

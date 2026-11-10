@@ -16,7 +16,7 @@ type MultiLineProps = { label: string; multiline: true } & Omit<
 type InputProps = SingleLineProps | MultiLineProps;
 
 const fieldClasses =
-  "bg-[#121212] border border-[#33353f] placeholder-[#9ca2a9] text-gray-100 text-sm rounded-lg block w-full p-2.5";
+  "bg-surface border border-border placeholder-muted text-foreground text-sm rounded-lg block w-full p-2.5";
 
 function isMultiLine(props: InputProps): props is MultiLineProps {
   return props.multiline === true;
@@ -36,7 +36,7 @@ export default function Input(props: InputProps) {
 
   return (
     <div className="mb-4">
-      <label htmlFor={id} className="text-white block mb-1 text-sm font-medium">
+      <label htmlFor={id} className="text-foreground block mb-1 text-sm font-medium">
         {props.label}
       </label>
       {field}

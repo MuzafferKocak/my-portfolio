@@ -26,13 +26,13 @@ type NativeButtonProps = CommonProps & { href?: undefined } & Omit<
 type ButtonProps = LinkButtonProps | NativeButtonProps;
 
 const solidClasses =
-  "bg-green-400 hover:bg-green-600 text-white font-medium py-2.5 px-5 rounded-lg w-full disabled:opacity-60 disabled:cursor-not-allowed";
+  "bg-primary hover:bg-primary-dark text-foreground font-medium py-2.5 px-5 rounded-lg w-full disabled:opacity-60 disabled:cursor-not-allowed";
 
 // Rahmen mit Farbverlauf: außen der Rahmen, innen der dunkle Hintergrund
 const outlineOuterClasses =
-  "px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-green-300 to-green-900 hover:bg-green-500 text-white";
+  "px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-light to-secondary hover:bg-primary-dark text-foreground";
 const outlineInnerClasses =
-  "flex items-center gap-3 bg-[#121212] hover:bg-green-400 rounded-full px-5 py-2";
+  "flex items-center gap-3 bg-surface hover:bg-primary rounded-full px-5 py-2";
 
 function isLinkButton(props: ButtonProps): props is LinkButtonProps {
   return typeof props.href === "string";

@@ -63,7 +63,7 @@ export default function ProjectsSection() {
 
   return (
     <section className="scroll-mt-20" id="projects">
-      <h2 className="text-center text-4xl font-bold text-white mb-4 mt-4 md:mb-8">
+      <h2 className="text-center text-4xl font-bold text-foreground mb-4 mt-4 md:mb-8">
         {t("title")}
       </h2>
 
