@@ -40,8 +40,8 @@ export default function Navbar() {
             src="/images/mek.jpeg"
             alt="MEK"
             priority
-            width={44}
-            height={48}
+            width={1199}
+            height={1312}
             className="h-12 w-auto rounded-sm"
           />
           <span className="hidden font-display text-xl text-foreground sm:block">
