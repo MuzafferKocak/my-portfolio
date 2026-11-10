@@ -17,7 +17,7 @@ export default function ProjectCard({
   previewUrl,
 }: ProjectCardProps) {
   return (
-    <div className="border rounded-lg lg:bg-surface border-border">
+    <div className="border rounded-lg lg:bg-secondary border-border">
       <div
         className="h-52 md:h-72 mt-4 rounded-t-xl relative group"
         style={{
@@ -25,7 +25,7 @@ export default function ProjectCard({
           backgroundSize: "contain",
         }}
       >
-        <div className="overlay items-center justify-center absolute top-0 left-0 w-full h-full bg-surface bg-opacity-0 hidden group-hover:flex group-hover:bg-opacity-70 transition-all duration-600">
+        <div className="overlay items-center justify-center absolute top-0 left-0 w-full h-full bg-secondary bg-opacity-0 hidden group-hover:flex group-hover:bg-opacity-70 transition-all duration-600">
           <Link
             href={gitUrl}
             target="_blank"
@@ -42,7 +42,7 @@ export default function ProjectCard({
           </Link>
         </div>
       </div>
-      <div className="text-foreground rounded-b-xl bg-surface py-6 px-4 flex flex-col h-auto md:h-[250px] lg:h-[200px]">
+      <div className="text-foreground rounded-b-xl bg-secondary py-6 px-4 flex flex-col h-auto md:h-[250px] lg:h-[200px]">
         <h5 className="text-xl font-semibold mb-2 ">{title}</h5>
         <p className="text-muted flex-grow">{description}</p>
       </div>

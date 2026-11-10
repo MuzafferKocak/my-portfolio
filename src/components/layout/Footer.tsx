@@ -6,7 +6,7 @@ export default function Footer() {
   const t = useTranslations("Footer");
 
   return (
-    <footer className="footer border z-10 border-t-border border-l-transparent border-r-transparent text-foreground bg-surface bg-opacity-100">
+    <footer className="footer border z-10 border-t-border border-l-transparent border-r-transparent text-foreground bg-secondary bg-opacity-100">
       <div className="container p-8 flex items-center justify-end gap-4">
         <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-accent">
           <Image
@@ -22,7 +22,7 @@ export default function Footer() {
           />
         </div>
 
-        <p className="text-subtle">
+        <p className="text-muted">
           &copy; {currentYear} {t("rights")}
         </p>
       </div>

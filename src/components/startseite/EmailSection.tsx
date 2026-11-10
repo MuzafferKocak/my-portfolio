@@ -65,7 +65,7 @@ export default function EmailSection() {
 
         <div className="flex flex-row gap-2">
           <Link href="https://github.com/MuzafferKocak" target="_blank">
-            <div className="w-12 h-12 bg-surface rounded-lg flex items-center justify-center hover:bg-primary-dark transition-all duration-300">
+            <div className="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center hover:bg-accent-dark transition-all duration-300">
               <Image
                 src="/github-icon.svg"
                 alt="GitHub Icon"
@@ -79,7 +79,7 @@ export default function EmailSection() {
             href="https://www.linkedin.com/in/muzaffer-kocak/"
             target="_blank"
           >
-            <div className="w-12 h-12 bg-surface rounded-lg flex items-center justify-center hover:bg-primary-dark transition-all duration-300">
+            <div className="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center hover:bg-accent-dark transition-all duration-300">
               <Image
                 src="/linkedin-icon.svg"
                 alt="Linkedin Icon"
@@ -93,7 +93,7 @@ export default function EmailSection() {
 
       <div>
         {emailSubmitted ? (
-          <p className="text-primary-dark text-sm mt-2">{t("success")}</p>
+          <p className="text-accent-dark text-sm mt-2">{t("success")}</p>
         ) : (
           <form className="flex flex-col" onSubmit={handleSubmit}>
             <Input

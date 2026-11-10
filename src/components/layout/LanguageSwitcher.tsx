@@ -26,11 +26,11 @@ export default function LanguageSwitcher() {
         aria-label="Language"
         aria-expanded={open}
       >
-        <GlobeAltIcon className="w-6 h-6 text-muted hover:text-primary" />
+        <GlobeAltIcon className="w-6 h-6 text-muted hover:text-accent" />
       </button>
 
       {open && (
-        <div className="absolute right-0 mt-2 bg-surface-alt border border-border rounded shadow-lg z-50 min-w-[80px] md:min-w-[90px]">
+        <div className="absolute right-0 mt-2 bg-primary-light border border-border rounded shadow-lg z-50 min-w-[80px] md:min-w-[90px]">
           {routing.locales.map((locale) => (
             <button
               key={locale}

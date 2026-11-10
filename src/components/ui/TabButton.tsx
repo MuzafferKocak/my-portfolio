@@ -29,7 +29,7 @@ export default function TabButton({
       <motion.div
         animate={active ? "active" : "default"}
         variants={variants}
-        className="h-[4px] bg-primary mt-2 mr-3"
+        className="h-[4px] bg-accent mt-2 mr-3"
       />
     </button>
   );

@@ -10,7 +10,7 @@ type TabId = "skills" | "education" | "certifications";
 
 type TabItem = { id: TabId; title: string; content: ReactNode };
 
-const linkClasses = "hover:text-primary hover:underline";
+const linkClasses = "hover:text-accent hover:underline";
 
 export default function AboutSection() {
   const [tab, setTab] = useState<TabId>("skills");

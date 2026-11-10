@@ -16,7 +16,7 @@ type MultiLineProps = { label: string; multiline: true } & Omit<
 type InputProps = SingleLineProps | MultiLineProps;
 
 const fieldClasses =
-  "bg-surface border border-border placeholder-muted text-foreground text-sm rounded-lg block w-full p-2.5";
+  "bg-secondary border border-border placeholder-muted text-foreground text-sm rounded-lg block w-full p-2.5";
 
 function isMultiLine(props: InputProps): props is MultiLineProps {
   return props.multiline === true;

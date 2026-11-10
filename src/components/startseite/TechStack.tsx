@@ -45,7 +45,7 @@ export default function TechStack() {
         {skills.map((skill) => (
           <div
             key={skill.icon}
-            className="flex flex-col items-center p-2 bg-surface border border-border rounded-lg transition-transform duration-300 hover:rotate-6 hover:scale-105 hover:bg-surface-alt"
+            className="flex flex-col items-center p-2 bg-secondary border border-border rounded-lg transition-transform duration-300 hover:rotate-6 hover:scale-105 hover:bg-primary-light"
           >
             <Image
               src={`/skills/${skill.icon}.svg`}
