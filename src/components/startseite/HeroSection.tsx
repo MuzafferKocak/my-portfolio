@@ -24,7 +24,7 @@ export default function HeroSection() {
     <MotionConfig reducedMotion="user">
       {/* Der Hero beginnt bei 0 (unter der festen Navigation), der obere Abstand
           steckt im Innenabstand. So landet "zum Seitenanfang" exakt oben. */}
-      <Section innerClassName="pt-24 pb-16 lg:pt-[6.5rem] lg:pb-24">
+      <Section innerClassName="pt-24 pb-4 lg:pt-[6.5rem] lg:pb-8">
         <div className="grid items-center gap-12 lg:grid-cols-12 lg:gap-8">
           <motion.div className="lg:col-span-7" {...enter(0)}>
             <h1 className="text-foreground">
