@@ -1,12 +1,12 @@
 "use client";
-import React from "react";
+
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
-import Button from "./ui/Button";
+import Button from "@/components/ui/Button";
 
-const HeroSection = () => {
+export default function HeroSection() {
   const t = useTranslations("Hero");
 
   return (
@@ -103,6 +103,4 @@ const HeroSection = () => {
       </div>
     </section>
   );
-};
-
-export default HeroSection;
+}

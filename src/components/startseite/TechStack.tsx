@@ -1,8 +1,10 @@
 "use client";
-import React from "react";
+
 import { useTranslations } from "next-intl";
 
-const skills = [
+type Skill = { name: string; icon: string };
+
+const skills: Skill[] = [
   { name: "HTML5", icon: "html" },
   { name: "CSS3", icon: "css" },
   { name: "JavaScript", icon: "js" },
@@ -29,7 +31,7 @@ const skills = [
   { name: "Vite", icon: "vite" },
 ];
 
-const TechStack = () => {
+export default function TechStack() {
   const t = useTranslations("TechStack");
 
   return (
@@ -39,11 +41,12 @@ const TechStack = () => {
       </h2>
 
       <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-4 border border-[#33353F] rounded-lg p-2">
-        {skills.map((skill, index) => (
+        {skills.map((skill) => (
           <div
-            key={index}
+            key={skill.icon}
             className="flex flex-col items-center p-2 bg-[#121212] border border-[#33353F] rounded-lg transition-transform duration-300 hover:rotate-6 hover:scale-105 hover:bg-[#2b2b2bab]"
           >
+            {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src={`https://skillicons.dev/icons?i=${skill.icon}`}
               alt={`${skill.name} logo`}
@@ -55,6 +58,4 @@ const TechStack = () => {
       </div>
     </section>
   );
-};
-
-export default TechStack;
+}

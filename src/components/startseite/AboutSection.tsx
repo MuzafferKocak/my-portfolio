@@ -1,19 +1,26 @@
 "use client";
-import React, { useTransition, useState } from "react";
+
+import { useState, useTransition, type ReactNode } from "react";
 import Image from "next/image";
-import TabButton from "./ui/TabButton";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
+import TabButton from "@/components/ui/TabButton";
 
-const AboutSection = () => {
-  const [tab, setTab] = useState("skills");
-  const [isPending, startTransition] = useTransition();
+type TabId = "skills" | "education" | "certifications";
+
+type TabItem = { id: TabId; title: string; content: ReactNode };
+
+const linkClasses = "hover:text-green-400 hover:underline";
+
+export default function AboutSection() {
+  const [tab, setTab] = useState<TabId>("skills");
+  const [, startTransition] = useTransition();
   const t = useTranslations("About");
 
-  const TAB_DATA = [
+  const tabs: TabItem[] = [
     {
-      title: t("skills.title"),
       id: "skills",
+      title: t("skills.title"),
       content: (
         <ul className="list-disc pl-2">
           <li>{t("skills.react")}</li>
@@ -25,8 +32,8 @@ const AboutSection = () => {
       ),
     },
     {
-      title: t("education.title"),
       id: "education",
+      title: t("education.title"),
       content: (
         <ul className="list-disc pl-2">
           <li>{t("education.js")}</li>
@@ -36,15 +43,15 @@ const AboutSection = () => {
       ),
     },
     {
-      title: t("certifications.title"),
       id: "certifications",
+      title: t("certifications.title"),
       content: (
         <ul className="list-disc pl-2">
           <li>
             <Link
               href={t("certifications.udemyJs")}
               target="_blank"
-              className="hover:text-green-400 hover:underline"
+              className={linkClasses}
             >
               JavaScript
             </Link>
@@ -53,7 +60,7 @@ const AboutSection = () => {
             <Link
               href={t("certifications.webDev")}
               target="_blank"
-              className="hover:text-green-400 hover:underline"
+              className={linkClasses}
             >
               Web Development Essential
             </Link>
@@ -62,7 +69,7 @@ const AboutSection = () => {
             <Link
               href={t("certifications.react")}
               target="_blank"
-              className="hover:text-green-400 hover:underline"
+              className={linkClasses}
             >
               Web Development with React
             </Link>
@@ -71,7 +78,7 @@ const AboutSection = () => {
             <Link
               href={t("certifications.backend")}
               target="_blank"
-              className="hover:text-green-400 hover:underline"
+              className={linkClasses}
             >
               Backend Development
             </Link>
@@ -81,11 +88,13 @@ const AboutSection = () => {
     },
   ];
 
-  const handleTabChange = (id) => {
+  const handleTabChange = (id: TabId) => {
     startTransition(() => {
       setTab(id);
     });
   };
+
+  const activeTab = tabs.find((item) => item.id === tab) ?? tabs[0];
 
   return (
     <section className="text-white scroll-mt-16" id="about">
@@ -109,24 +118,20 @@ const AboutSection = () => {
           </p>
 
           <div className="flex flex-row justify-start mt-8">
-            {TAB_DATA.map((tabItem) => (
+            {tabs.map((item) => (
               <TabButton
-                key={tabItem.id}
-                selectTab={() => handleTabChange(tabItem.id)}
-                active={tab === tabItem.id}
+                key={item.id}
+                selectTab={() => handleTabChange(item.id)}
+                active={tab === item.id}
               >
-                {tabItem.title}
+                {item.title}
               </TabButton>
             ))}
           </div>
 
-          <div className="mt-8 min-h-[130px]">
-            {TAB_DATA.find((tItem) => tItem.id === tab).content}
-          </div>
+          <div className="mt-8 min-h-[130px]">{activeTab.content}</div>
         </div>
       </div>
     </section>
   );
-};
-
-export default AboutSection;
+}

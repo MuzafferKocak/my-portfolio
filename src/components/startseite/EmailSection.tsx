@@ -1,29 +1,24 @@
 "use client";
-import React, { useState } from "react";
-import GithubIcon from "../../public/github-icon.svg";
-import LinkedinIcon from "../../public/linkedin-icon.svg";
+
+import { useState, type FormEvent } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import Button from "./ui/Button";
-import Input from "./ui/Input";
+import Button from "@/components/ui/Button";
+import Input from "@/components/ui/Input";
 
-const EmailSection = () => {
+export default function EmailSection() {
   const [emailSubmitted, setEmailSubmitted] = useState(false);
   const [isSending, setIsSending] = useState(false);
   const [hasError, setHasError] = useState(false);
 
   const t = useTranslations("Email");
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (isSending) return;
 
-    const data = {
-      email: e.target.email.value,
-      subject: e.target.subject.value,
-      message: e.target.message.value,
-    };
+    const data = Object.fromEntries(new FormData(e.currentTarget));
 
     setIsSending(true);
     setHasError(false);
@@ -72,7 +67,7 @@ const EmailSection = () => {
           <Link href="https://github.com/MuzafferKocak" target="_blank">
             <div className="w-12 h-12 bg-[#121212] rounded-lg flex items-center justify-center hover:bg-green-500 transition-all duration-300">
               <Image
-                src={GithubIcon}
+                src="/github-icon.svg"
                 alt="GitHub Icon"
                 width={48}
                 height={48}
@@ -86,7 +81,7 @@ const EmailSection = () => {
           >
             <div className="w-12 h-12 bg-[#121212] rounded-lg flex items-center justify-center hover:bg-green-500 transition-all duration-300">
               <Image
-                src={LinkedinIcon}
+                src="/linkedin-icon.svg"
                 alt="Linkedin Icon"
                 width={48}
                 height={48}
@@ -101,7 +96,6 @@ const EmailSection = () => {
           <p className="text-green-500 text-sm mt-2">{t("success")}</p>
         ) : (
           <form className="flex flex-col" onSubmit={handleSubmit}>
-            {/* Email */}
             <Input
               label={t("form.email")}
               name="email"
@@ -110,7 +104,6 @@ const EmailSection = () => {
               placeholder={t("form.emailPlaceholder")}
             />
 
-            {/* Subject */}
             <Input
               label={t("form.subject")}
               name="subject"
@@ -119,7 +112,6 @@ const EmailSection = () => {
               placeholder={t("form.subjectPlaceholder")}
             />
 
-            {/* Message */}
             <Input
               multiline
               label={t("form.message")}
@@ -128,7 +120,6 @@ const EmailSection = () => {
               placeholder={t("form.messagePlaceholder")}
             />
 
-            {/* Button */}
             {hasError && (
               <p role="alert" className="text-red-400 text-sm mb-3">
                 {t("error")}
@@ -142,6 +133,4 @@ const EmailSection = () => {
       </div>
     </section>
   );
-};
-
-export default EmailSection;
+}

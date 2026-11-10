@@ -1,57 +1,65 @@
 "use client";
-import React, { useRef } from "react";
-import ProjectCard from "./ui/ProjectCard";
+
+import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { useTranslations } from "next-intl";
+import ProjectCard from "@/components/ui/ProjectCard";
 
-const ProjectsSection = () => {
+type Project = {
+  id: string;
+  image: string;
+  gitUrl: string;
+  previewUrl: string;
+};
+
+const projects: Project[] = [
+  {
+    id: "blog",
+    image: "/images/projects/myBlog.png",
+    gitUrl: "https://github.com/MuzafferKocak/milestone-blog-app",
+    previewUrl: "https://blog-app-murex-two.vercel.app/",
+  },
+  {
+    id: "disney",
+    image: "/images/projects/disney.png",
+    gitUrl: "https://github.com/MuzafferKocak/disney-clone",
+    previewUrl: "https://disney-clone-livid-seven.vercel.app/",
+  },
+  {
+    id: "dashboard",
+    image: "/images/projects/dashboard.png",
+    gitUrl: "https://github.com/MuzafferKocak/dashboard",
+    previewUrl: "https://dashboard-blue-three.vercel.app/",
+  },
+  {
+    id: "movie",
+    image: "/images/projects/movie-app.png",
+    gitUrl: "https://github.com/MuzafferKocak/movie-app",
+    previewUrl: "https://movie-app-omega-woad.vercel.app/",
+  },
+  {
+    id: "netflix",
+    image: "/images/projects/netflix-app.png",
+    gitUrl: "https://github.com/MuzafferKocak/netflix-app",
+    previewUrl: "https://netflix-app-u4o2.vercel.app/",
+  },
+  {
+    id: "stock",
+    image: "/images/projects/stockApp.jpeg",
+    gitUrl: "https://github.com/MuzafferKocak/my-stock",
+    previewUrl: "https://my-stock-flame.vercel.app/",
+  },
+];
+
+const cardVariants = {
+  initial: { opacity: 0, y: 50 },
+  animate: { opacity: 1, y: 0 },
+};
+
+export default function ProjectsSection() {
   const t = useTranslations("Projects");
-  const ref = useRef(null);
+  const ref = useRef<HTMLUListElement>(null);
   const isInView = useInView(ref, { once: true });
-
-  const projects = [
-    {
-      id: "blog",
-      image: "/images/projects/myBlog.png",
-      gitUrl: "https://github.com/MuzafferKocak/milestone-blog-app",
-      previewUrl: "https://blog-app-murex-two.vercel.app/",
-    },
-    {
-      id: "disney",
-      image: "/images/projects/disney.png",
-      gitUrl: "https://github.com/MuzafferKocak/disney-clone",
-      previewUrl: "https://disney-clone-livid-seven.vercel.app/",
-    },
-    {
-      id: "dashboard",
-      image: "/images/projects/dashboard.png",
-      gitUrl: "https://github.com/MuzafferKocak/dashboard",
-      previewUrl: "https://dashboard-blue-three.vercel.app/",
-    },
-    {
-      id: "movie",
-      image: "/images/projects/movie-app.png",
-      gitUrl: "https://github.com/MuzafferKocak/movie-app",
-      previewUrl: "https://movie-app-omega-woad.vercel.app/",
-    },
-    {
-      id: "netflix",
-      image: "/images/projects/netflix-app.png",
-      gitUrl: "https://github.com/MuzafferKocak/netflix-app",
-      previewUrl: "https://netflix-app-u4o2.vercel.app/",
-    },
-    {
-      id: "stock",
-      image: "/images/projects/stockApp.jpeg",
-      gitUrl: "https://github.com/MuzafferKocak/my-stock",
-      previewUrl: "https://my-stock-flame.vercel.app/",
-    },
-  ];
-
-  const cardVariants = {
-    initial: { opacity: 0, y: 50 },
-    animate: { opacity: 1, y: 0 },
-  };
 
   return (
     <section className="scroll-mt-20" id="projects">
@@ -80,6 +88,4 @@ const ProjectsSection = () => {
       </ul>
     </section>
   );
-};
-
-export default ProjectsSection;
+}

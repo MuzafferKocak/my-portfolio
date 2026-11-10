@@ -1,12 +1,10 @@
-"use client";
-
-import AboutSection from "@/components/AboutSection";
-import EmailSection from "@/components/EmailSection";
-import Footer from "@/components/layout/Footer";
-import HeroSection from "@/components/HeroSection";
 import Navbar from "@/components/layout/Navbar";
-import ProjectsSection from "@/components/ProjectsSection";
-import TechStack from "@/components/TechStack";
+import Footer from "@/components/layout/Footer";
+import HeroSection from "@/components/startseite/HeroSection";
+import AboutSection from "@/components/startseite/AboutSection";
+import TechStack from "@/components/startseite/TechStack";
+import ProjectsSection from "@/components/startseite/ProjectsSection";
+import EmailSection from "@/components/startseite/EmailSection";
 
 export default function HomePage() {
   return (
