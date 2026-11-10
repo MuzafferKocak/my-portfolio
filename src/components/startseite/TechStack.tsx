@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 
 type Skill = { name: string; icon: string };
@@ -46,10 +47,11 @@ export default function TechStack() {
             key={skill.icon}
             className="flex flex-col items-center p-2 bg-surface border border-border rounded-lg transition-transform duration-300 hover:rotate-6 hover:scale-105 hover:bg-surface-alt"
           >
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src={`https://skillicons.dev/icons?i=${skill.icon}`}
+            <Image
+              src={`/skills/${skill.icon}.svg`}
               alt={`${skill.name} logo`}
+              width={48}
+              height={48}
               className="w-12 h-12"
             />
             <p className="mt-2 text-foreground text-sm font-medium">{skill.name}</p>
