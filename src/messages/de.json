@@ -21,6 +21,7 @@
 
   "About": {
     "title": "Über mich",
+    "imageAlt": "Ein Laptop auf einem Holztisch",
     "description1": "Ich bin ein leidenschaftlicher Full-Stack-Webentwickler mit Fokus auf interaktive und responsive Webanwendungen. Meine Expertise umfasst JavaScript, React, Next.js, Redux, Node.js, Express, MongoDB, Sequelize, HTML, CSS, Tailwind, MUI, Bootstrap und Git.",
     "description2": "Ich liebe Herausforderungen und bin stets bereit, mein Wissen zu erweitern. Zusammenarbeit ist der Schlüssel zu großartigen Anwendungen, und ich freue mich, zu innovativen Projekten beizutragen und in einem dynamischen Umfeld zu wachsen.",
     "description3": "Nach meinem Hintergrund in CNC-Bearbeitung und Ingenieurwesen nutze ich nun meine Leidenschaft für Problemlösungen in der Full-Stack-Entwicklung. Diese vielfältige Erfahrung gibt mir eine einzigartige Perspektive bei der Bewältigung von Herausforderungen in der Technologie.",
@@ -47,7 +48,12 @@
     }
   },
   "TechStack": {
-    "title": "Technologien"
+    "title": "Technologien",
+    "groups": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "tools": "Werkzeuge"
+    }
   },
   "Projects": {
     "title": "Meine Projekte",

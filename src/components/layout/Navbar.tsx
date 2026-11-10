@@ -6,6 +6,7 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { useParams } from "next/navigation";
+import Container from "@/components/ui/Container";
 import NavLink from "./NavLink";
 import MenuOverlay, { type NavItem } from "./MenuOverlay";
 import LanguageSwitcher from "./LanguageSwitcher";
@@ -28,7 +29,7 @@ export default function Navbar() {
 
   return (
     <nav className="fixed inset-x-0 top-0 z-10 border-b border-border bg-secondary">
-      <div className="container mx-auto flex items-center justify-between px-4 py-2">
+      <Container className="flex items-center justify-between py-2">
         {/* Logo-Platte und Name */}
         <Link
           href={`/${locale}`}
@@ -80,7 +81,7 @@ export default function Navbar() {
           </ul>
           <LanguageSwitcher />
         </div>
-      </div>
+      </Container>
 
       {/* Mobile overlay menu */}
       {navbarOpen && (

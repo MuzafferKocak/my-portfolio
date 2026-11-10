@@ -6,6 +6,7 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 import Button from "@/components/ui/Button";
 import Input from "@/components/ui/Input";
+import Section from "@/components/ui/Section";
 
 export default function EmailSection() {
   const [emailSubmitted, setEmailSubmitted] = useState(false);
@@ -43,10 +44,8 @@ export default function EmailSection() {
   };
 
   return (
-    <section
-      className="grid md:grid-cols-2 scroll-mt-16 py-16 gap-4 relative"
-      id="contact"
-    >
+    <Section id="contact" tone="secondary">
+      <div className="relative grid gap-8 md:grid-cols-2">
       <div
         className="
   bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))]
@@ -131,6 +130,7 @@ export default function EmailSection() {
           </form>
         )}
       </div>
-    </section>
+      </div>
+    </Section>
   );
 }

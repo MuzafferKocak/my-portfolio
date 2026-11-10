@@ -21,6 +21,7 @@
 
   "About": {
     "title": "Hakkımda",
+    "imageAlt": "Ahşap bir masada dizüstü bilgisayar",
     "description1": "Etkileşimli ve duyarlı web uygulamalarına odaklanan tutkulu bir Full-Stack geliştiricisiyim. Uzmanlık alanlarım JavaScript, React, Next.js, Redux, Node.js, Express, MongoDB, Sequelize, HTML, CSS, Tailwind, MUI, Bootstrap ve Git’ten oluşuyor.",
     "description2": "Zorlukları severim ve her zaman yeni şeyler öğrenmeye açığım. İşbirliği benim için önemli ve dinamik ekiplerde çalışıp yenilikçi projelere katkı sağlamaktan büyük keyif alıyorum.",
     "description3": "CNC işleme ve mühendislik geçmişimin üzerine yazılım geliştirme tutkumu ekledim. Bu çeşitlilik, problemlere farklı bir bakış açısıyla yaklaşmamı sağlıyor.",
@@ -48,7 +49,12 @@
   },
 
   "TechStack": {
-    "title": "Teknolojiler"
+    "title": "Teknolojiler",
+    "groups": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "tools": "Araçlar"
+    }
   },
 
   "Projects": {

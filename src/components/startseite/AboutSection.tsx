@@ -1,20 +1,21 @@
 "use client";
 
-import { useState, useTransition, type ReactNode } from "react";
+import { useState, type ReactNode } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
+import Section from "@/components/ui/Section";
+import SectionHeading from "@/components/ui/SectionHeading";
 import TabButton from "@/components/ui/TabButton";
 
 type TabId = "skills" | "education" | "certifications";
 
 type TabItem = { id: TabId; title: string; content: ReactNode };
 
-const linkClasses = "hover:text-accent hover:underline";
+const linkClasses = "underline-offset-4 hover:text-accent hover:underline";
 
 export default function AboutSection() {
   const [tab, setTab] = useState<TabId>("skills");
-  const [, startTransition] = useTransition();
   const t = useTranslations("About");
 
   const tabs: TabItem[] = [
@@ -22,7 +23,7 @@ export default function AboutSection() {
       id: "skills",
       title: t("skills.title"),
       content: (
-        <ul className="list-disc pl-2">
+        <ul className="list-disc space-y-1 pl-5">
           <li>{t("skills.react")}</li>
           <li>{t("skills.js")}</li>
           <li>{t("skills.express")}</li>
@@ -35,7 +36,7 @@ export default function AboutSection() {
       id: "education",
       title: t("education.title"),
       content: (
-        <ul className="list-disc pl-2">
+        <ul className="list-disc space-y-1 pl-5">
           <li>{t("education.js")}</li>
           <li>{t("education.frontend")}</li>
           <li>{t("education.backend")}</li>
@@ -46,7 +47,7 @@ export default function AboutSection() {
       id: "certifications",
       title: t("certifications.title"),
       content: (
-        <ul className="list-disc pl-2">
+        <ul className="list-disc space-y-1 pl-5">
           <li>
             <Link
               href={t("certifications.udemyJs")}
@@ -88,40 +89,41 @@ export default function AboutSection() {
     },
   ];
 
-  const handleTabChange = (id: TabId) => {
-    startTransition(() => {
-      setTab(id);
-    });
-  };
-
   const activeTab = tabs.find((item) => item.id === tab) ?? tabs[0];
 
   return (
-    <section className="text-foreground scroll-mt-16" id="about">
-      <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-10 sm:py-12 xl:px-6">
-        <Image
-          src="/images/computer.webp"
-          alt="Image"
-          width={550}
-          height={550}
-        />
-        <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
-          <h2 className="text-4xl font-bold text-foreground mb-4">{t("title")}</h2>
-          <p className="text-muted text-base lg:text-lg mb-1">
-            {t("description1")}
-          </p>
-          <p className="text-muted text-base lg:text-lg mb-2">
-            {t("description2")}
-          </p>
-          <p className="text-muted text-base lg:text-lg mb-4">
+    <Section id="about">
+      <div className="grid items-start gap-10 lg:grid-cols-12 lg:gap-14">
+        <div className="lg:col-span-5">
+          <Image
+            src="/images/computer.webp"
+            alt={t("imageAlt")}
+            width={1280}
+            height={903}
+            sizes="(min-width: 1024px) 460px, 90vw"
+            className="aspect-[4/3] w-full rounded-md object-cover"
+          />
+        </div>
+
+        <div className="lg:col-span-7">
+          <SectionHeading>{t("title")}</SectionHeading>
+
+          {/* Zuerst die Geschichte vom CNC zum Code, dann Haltung, dann Werkzeuge */}
+          <p className="mt-6 max-w-prose text-xl leading-relaxed text-foreground">
             {t("description3")}
           </p>
+          <p className="mt-4 max-w-prose text-lg text-muted">
+            {t("description2")}
+          </p>
+          <p className="mt-4 max-w-prose text-lg text-muted">
+            {t("description1")}
+          </p>
 
-          <div className="flex flex-row justify-start mt-8">
+          <div role="tablist" className="mt-10 flex flex-wrap">
             {tabs.map((item) => (
               <TabButton
                 key={item.id}
-                selectTab={() => handleTabChange(item.id)}
+                selectTab={() => setTab(item.id)}
                 active={tab === item.id}
               >
                 {item.title}
@@ -129,9 +131,11 @@ export default function AboutSection() {
             ))}
           </div>
 
-          <div className="mt-8 min-h-[130px]">{activeTab.content}</div>
+          <div role="tabpanel" className="mt-6 min-h-[8.5rem] text-muted">
+            {activeTab.content}
+          </div>
         </div>
       </div>
-    </section>
+    </Section>
   );
 }

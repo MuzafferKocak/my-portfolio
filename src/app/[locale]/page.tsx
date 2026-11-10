@@ -8,15 +8,13 @@ import EmailSection from "@/components/startseite/EmailSection";
 
 export default function HomePage() {
   return (
-    <main className="min-h-screen overflow-x-hidden overflow-y-hidden">
+    <main className="min-h-screen overflow-clip">
       <Navbar />
-      <div className="container mt-20 mx-auto py-6 px-12">
-        <HeroSection />
-        <AboutSection />
-        <TechStack />
-        <ProjectsSection />
-        <EmailSection />
-      </div>
+      <HeroSection />
+      <AboutSection />
+      <TechStack />
+      <ProjectsSection />
+      <EmailSection />
       <Footer />
     </main>
   );

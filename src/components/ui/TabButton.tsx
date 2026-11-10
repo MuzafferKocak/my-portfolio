@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const variants = {
   default: { width: 0 },
-  active: { width: "calc(100% - 0.75rem)" },
+  active: { width: "calc(100% - 1.25rem)" },
 };
 
 type TabButtonProps = {
@@ -22,14 +22,17 @@ export default function TabButton({
   const buttonClasses = active ? "text-foreground" : "text-muted";
 
   return (
-    <button type="button" onClick={selectTab}>
-      <p className={`mr-3 font-semibold hover:text-foreground ${buttonClasses}`}>
+    <button type="button" role="tab" aria-selected={active} onClick={selectTab}>
+      <span
+        className={`mr-5 block text-lg font-semibold hover:text-foreground ${buttonClasses}`}
+      >
         {children}
-      </p>
-      <motion.div
+      </span>
+      <motion.span
+        aria-hidden="true"
         animate={active ? "active" : "default"}
         variants={variants}
-        className="h-[4px] bg-accent mt-2 mr-3"
+        className="mr-5 mt-2 block h-[4px] bg-accent"
       />
     </button>
   );

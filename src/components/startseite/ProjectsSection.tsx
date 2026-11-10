@@ -4,6 +4,7 @@ import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { useTranslations } from "next-intl";
 import ProjectCard from "@/components/ui/ProjectCard";
+import Section from "@/components/ui/Section";
 
 type Project = {
   id: string;
@@ -62,7 +63,7 @@ export default function ProjectsSection() {
   const isInView = useInView(ref, { once: true });
 
   return (
-    <section className="scroll-mt-20" id="projects">
+    <Section id="projects">
       <h2 className="text-center text-4xl font-bold text-foreground mb-4 mt-4 md:mb-8">
         {t("title")}
       </h2>
@@ -86,6 +87,6 @@ export default function ProjectsSection() {
           </motion.li>
         ))}
       </ul>
-    </section>
+    </Section>
   );
 }
