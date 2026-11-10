@@ -1,10 +1,7 @@
-"use client";
-
-import { useRef } from "react";
-import { motion, useInView } from "framer-motion";
 import { useTranslations } from "next-intl";
-import ProjectCard from "@/components/ui/ProjectCard";
 import Section from "@/components/ui/Section";
+import SectionHeading from "@/components/ui/SectionHeading";
+import ProjectItem from "./ProjectItem";
 
 type Project = {
   id: string;
@@ -52,40 +49,30 @@ const projects: Project[] = [
   },
 ];
 
-const cardVariants = {
-  initial: { opacity: 0, y: 50 },
-  animate: { opacity: 1, y: 0 },
-};
-
 export default function ProjectsSection() {
   const t = useTranslations("Projects");
-  const ref = useRef<HTMLUListElement>(null);
-  const isInView = useInView(ref, { once: true });
 
   return (
     <Section id="projects">
-      <h2 className="text-center text-4xl font-bold text-foreground mb-4 mt-4 md:mb-8">
-        {t("title")}
-      </h2>
+      <SectionHeading>{t("title")}</SectionHeading>
 
-      <ul ref={ref} className="grid md:grid-cols-2 gap-8 md:gap-12">
-        {projects.map((project, index) => (
-          <motion.li
-            key={project.id}
-            variants={cardVariants}
-            initial="initial"
-            animate={isInView ? "animate" : "initial"}
-            transition={{ duration: 0.5, delay: index * 0.4 }}
-          >
-            <ProjectCard
-              title={t(`items.${project.id}.title`)}
+      <ul className="mt-10 divide-y divide-border">
+        {projects.map((project) => {
+          const title = t(`items.${project.id}.title`);
+          return (
+            <ProjectItem
+              key={project.id}
+              title={title}
               description={t(`items.${project.id}.description`)}
               imgUrl={project.image}
+              imgAlt={t("screenshotAlt", { title })}
               gitUrl={project.gitUrl}
               previewUrl={project.previewUrl}
+              liveLabel={t("live")}
+              codeLabel={t("code")}
             />
-          </motion.li>
-        ))}
+          );
+        })}
       </ul>
     </Section>
   );

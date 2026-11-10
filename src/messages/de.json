@@ -57,6 +57,9 @@
   },
   "Projects": {
     "title": "Meine Projekte",
+    "live": "Live-Demo",
+    "code": "Code",
+    "screenshotAlt": "Screenshot von {title}",
     "items": {
       "blog": {
         "title": "Milestone-Blog-App",

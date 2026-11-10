@@ -59,6 +59,9 @@
 
   "Projects": {
     "title": "Projelerim",
+    "live": "Canlı demo",
+    "code": "Kod",
+    "screenshotAlt": "{title} ekran görüntüsü",
     "items": {
       "blog": {
         "title": "Milestone Blog Uygulaması",
