@@ -1,31 +1,69 @@
-html {
-  scroll-behavior: smooth;
-}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/*
+  Farben der Seite. Nur hier ändern, im Code stehen nur die Namen
+  (z. B. bg-primary, text-muted).
+  Werte als "R G B", damit Tailwind Transparenz wie bg-accent/50 kann.
+
+  Die Farben stammen vom Logo: dunkelgrüne Platte, Messing-Schrift.
+*/
 :root {
-  --foreground-rgb: 255, 255, 255;
-  --background-start-rgb: 15, 15, 15;
-  --background-end-rgb: 0, 0, 0;
+  /* Marke */
+  --color-primary: 75 87 62; /* #4b573e Moos: Hauptfläche */
+  --color-primary-light: 92 106 76; /* helleres Moos: Hover, Menü */
+  --color-secondary: 38 48 32; /* #263020 Platte: Navigation, Kontakt, Footer */
+  --color-accent: 216 168 74; /* #d8a84a Messing: Buttons, Hover, Details */
+  --color-accent-dark: 184 138 48; /* dunkleres Messing: Hover auf Buttons */
+
+  /* Helle Flächen und Text darauf */
+  --color-surface: 223 227 207; /* Flechte */
+  --color-ink: 31 39 25; /* Tinte */
+
+  /* Text und Linien auf dunklem Grund */
+  --color-foreground: 242 238 223; /* Leinen */
+  --color-muted: 197 204 179;
+  --color-border: 107 120 87;
+
+  /* Rückmeldung */
+  --color-danger: 255 180 168; /* auf dunklem Grund */
+  --color-danger-dark: 153 27 27; /* auf heller Fläche */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 15, 15, 15;
-    --background-end-rgb: 0, 0, 0;
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
   }
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(var(--color-foreground));
+  background-color: rgb(var(--color-primary));
+  font-family: var(--font-body), system-ui, sans-serif;
+  line-height: 1.65;
+}
+
+@layer base {
+  /* Überschriften in der Serife. Young Serif hat nur ein Gewicht,
+     font-synthesis verhindert unechtes Fett. */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-display), Georgia, serif;
+    font-synthesis: none;
+    line-height: 1.1;
+  }
+
+  :focus-visible {
+    outline: 2px solid rgb(var(--color-accent));
+    outline-offset: 3px;
+  }
 }

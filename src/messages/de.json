@@ -12,13 +12,16 @@
     "type2": "ein Frontend-Entwickler",
     "type3": "ein Backend-Entwickler",
     "type4": "ein Full-Stack-Entwickler",
-    "description": "Ich bin ein leidenschaftlicher Full-Stack-Entwickler, spezialisiert auf moderne Webanwendungen. Mit Erfahrung in React, Next.js, Express, MongoDB und Node.js entwickle ich skalierbare und benutzerfreundliche Lösungen. Lass uns gemeinsam etwas Großartiges schaffen!",
-    "cv_en": "Lebenslauf herunterladen (EN)",
-    "cv_de": "Lebenslauf herunterladen (DE)"
+    "description": "Ich entwickle moderne Web-Apps mit React, Next.js, Node.js und MongoDB, von der Oberfläche bis zur Datenbank. Ich bin offen für Remote-Stellen weltweit.",
+    "cta": "Kontakt aufnehmen",
+    "photoAlt": "Porträt von Muzaffer Kocak",
+    "cv_en": "Lebenslauf (EN)",
+    "cv_de": "Lebenslauf (DE)"
   },
 
   "About": {
     "title": "Über mich",
+    "imageAlt": "Ein Laptop auf einem Holztisch",
     "description1": "Ich bin ein leidenschaftlicher Full-Stack-Webentwickler mit Fokus auf interaktive und responsive Webanwendungen. Meine Expertise umfasst JavaScript, React, Next.js, Redux, Node.js, Express, MongoDB, Sequelize, HTML, CSS, Tailwind, MUI, Bootstrap und Git.",
     "description2": "Ich liebe Herausforderungen und bin stets bereit, mein Wissen zu erweitern. Zusammenarbeit ist der Schlüssel zu großartigen Anwendungen, und ich freue mich, zu innovativen Projekten beizutragen und in einem dynamischen Umfeld zu wachsen.",
     "description3": "Nach meinem Hintergrund in CNC-Bearbeitung und Ingenieurwesen nutze ich nun meine Leidenschaft für Problemlösungen in der Full-Stack-Entwicklung. Diese vielfältige Erfahrung gibt mir eine einzigartige Perspektive bei der Bewältigung von Herausforderungen in der Technologie.",
@@ -45,10 +48,18 @@
     }
   },
   "TechStack": {
-    "title": "Technologien"
+    "title": "Technologien",
+    "groups": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "tools": "Werkzeuge"
+    }
   },
   "Projects": {
     "title": "Meine Projekte",
+    "live": "Live-Demo",
+    "code": "Code",
+    "screenshotAlt": "Screenshot von {title}",
     "items": {
       "blog": {
         "title": "Milestone-Blog-App",
@@ -80,7 +91,9 @@
   "Email": {
     "title": "Lass uns verbinden",
     "desc": "Ich bin immer offen für neue Chancen, Zusammenarbeit und spannende Projekte. Lass uns verbinden und gemeinsam etwas Großartiges schaffen!",
+    "remote": "Ich bin aktuell offen für Remote-Stellen weltweit.",
     "success": "E-Mail wurde erfolgreich gesendet!",
+    "error": "Etwas ist schiefgelaufen. Bitte versuche es später noch einmal.",
     "form": {
       "email": "Ihre E-Mail",
       "emailPlaceholder": "Geben Sie Ihre E-Mail-Adresse ein",
@@ -88,7 +101,8 @@
       "subjectPlaceholder": "Betreff Ihrer Nachricht",
       "message": "Nachricht",
       "messagePlaceholder": "Lass uns darüber reden...",
-      "send": "Nachricht senden"
+      "send": "Nachricht senden",
+      "sending": "Wird gesendet..."
     }
   },
   "Footer": {

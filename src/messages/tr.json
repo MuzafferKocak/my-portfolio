@@ -12,13 +12,16 @@
     "type2": "Frontend Geliştirici",
     "type3": "Backend Geliştirici",
     "type4": "Full-Stack Geliştirici",
-    "description": "Modern web uygulamalarına odaklanan tutkulu bir Full-Stack geliştiricisiyim. React, Next.js, Express, MongoDB ve Node.js konularında deneyimliyim. Ölçeklenebilir ve kullanıcı dostu çözümler üretmeyi seviyorum. Haydi birlikte harika bir şeyler ortaya çıkaralım!",
+    "description": "React, Next.js, Node.js ve MongoDB ile arayüzden veritabanına kadar modern web uygulamaları geliştiriyorum. Dünya genelinde uzaktan çalışmaya açığım.",
+    "cta": "İletişime geç",
+    "photoAlt": "Muzaffer Kocak portresi",
     "cv_en": "CV indir (EN)",
     "cv_de": "CV indir (DE)"
   },
 
   "About": {
     "title": "Hakkımda",
+    "imageAlt": "Ahşap bir masada dizüstü bilgisayar",
     "description1": "Etkileşimli ve duyarlı web uygulamalarına odaklanan tutkulu bir Full-Stack geliştiricisiyim. Uzmanlık alanlarım JavaScript, React, Next.js, Redux, Node.js, Express, MongoDB, Sequelize, HTML, CSS, Tailwind, MUI, Bootstrap ve Git’ten oluşuyor.",
     "description2": "Zorlukları severim ve her zaman yeni şeyler öğrenmeye açığım. İşbirliği benim için önemli ve dinamik ekiplerde çalışıp yenilikçi projelere katkı sağlamaktan büyük keyif alıyorum.",
     "description3": "CNC işleme ve mühendislik geçmişimin üzerine yazılım geliştirme tutkumu ekledim. Bu çeşitlilik, problemlere farklı bir bakış açısıyla yaklaşmamı sağlıyor.",
@@ -46,11 +49,19 @@
   },
 
   "TechStack": {
-    "title": "Teknolojiler"
+    "title": "Teknolojiler",
+    "groups": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "tools": "Araçlar"
+    }
   },
 
   "Projects": {
     "title": "Projelerim",
+    "live": "Canlı demo",
+    "code": "Kod",
+    "screenshotAlt": "{title} ekran görüntüsü",
     "items": {
       "blog": {
         "title": "Milestone Blog Uygulaması",
@@ -83,7 +94,9 @@
   "Email": {
     "title": "İletişime Geçelim",
     "desc": "Yeni fırsatlar, işbirlikleri ve heyecan verici projelere her zaman açığım. Haydi iletişime geçelim ve birlikte harika işler yapalım!",
+    "remote": "Şu anda dünya genelinde uzaktan çalışma fırsatlarına açığım.",
     "success": "E-posta başarıyla gönderildi!",
+    "error": "Bir şeyler ters gitti. Lütfen daha sonra tekrar deneyin.",
     "form": {
       "email": "E-posta",
       "emailPlaceholder": "E-posta adresinizi girin",
@@ -91,7 +104,8 @@
       "subjectPlaceholder": "Mesajınızın konusu",
       "message": "Mesaj",
       "messagePlaceholder": "Konuşalım...",
-      "send": "Mesaj Gönder"
+      "send": "Mesaj Gönder",
+      "sending": "Gönderiliyor..."
     }
   },
 
