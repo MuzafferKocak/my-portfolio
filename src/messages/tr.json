@@ -94,6 +94,7 @@
   "Email": {
     "title": "İletişime Geçelim",
     "desc": "Yeni fırsatlar, işbirlikleri ve heyecan verici projelere her zaman açığım. Haydi iletişime geçelim ve birlikte harika işler yapalım!",
+    "remote": "Şu anda dünya genelinde uzaktan çalışma fırsatlarına açığım.",
     "success": "E-posta başarıyla gönderildi!",
     "error": "Bir şeyler ters gitti. Lütfen daha sonra tekrar deneyin.",
     "form": {

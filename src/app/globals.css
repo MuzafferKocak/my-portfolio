@@ -27,7 +27,8 @@
   --color-border: 107 120 87;
 
   /* Rückmeldung */
-  --color-danger: 255 180 168;
+  --color-danger: 255 180 168; /* auf dunklem Grund */
+  --color-danger-dark: 153 27 27; /* auf heller Fläche */
 }
 
 html {

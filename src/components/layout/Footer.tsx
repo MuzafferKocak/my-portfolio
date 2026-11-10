@@ -8,7 +8,7 @@ export default function Footer() {
 
   return (
     <footer className="border-t border-border bg-secondary text-foreground">
-      <Container className="flex items-center justify-end gap-4 py-8">
+      <Container className="flex items-center gap-4 py-8">
         <Image
           src="/images/mek.jpeg"
           alt="MEK"

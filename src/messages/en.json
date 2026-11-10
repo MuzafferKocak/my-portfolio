@@ -90,6 +90,7 @@
   "Email": {
     "title": "Let's Connect",
     "desc": "I'm always open to new opportunities, collaborations, and exciting projects. Let's connect and create something great together!",
+    "remote": "I'm currently open to remote roles worldwide.",
     "success": "Email sent successfully!",
     "error": "Something went wrong. Please try again later.",
     "form": {

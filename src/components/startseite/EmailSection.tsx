@@ -1,12 +1,25 @@
 "use client";
 
 import { useState, type FormEvent } from "react";
-import Link from "next/link";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import Button from "@/components/ui/Button";
 import Input from "@/components/ui/Input";
 import Section from "@/components/ui/Section";
+import SectionHeading from "@/components/ui/SectionHeading";
+
+const socialLinks = [
+  {
+    name: "GitHub",
+    href: "https://github.com/MuzafferKocak",
+    icon: "/github-icon.svg",
+  },
+  {
+    name: "LinkedIn",
+    href: "https://www.linkedin.com/in/muzaffer-kocak/",
+    icon: "/linkedin-icon.svg",
+  },
+];
 
 export default function EmailSection() {
   const [emailSubmitted, setEmailSubmitted] = useState(false);
@@ -45,91 +58,85 @@ export default function EmailSection() {
 
   return (
     <Section id="contact" tone="secondary">
-      <div className="relative grid gap-8 md:grid-cols-2">
-      <div
-        className="
-  bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))]
-  from-secondary to-transparent
-  rounded-full
-  blur-2xl
-  absolute
-  left-2 transform -translate-x-1/2 h-48 w-48 top-[88%] sm:h-64 sm:w-64 sm:top-[82%] md:h-80 md:w-80 md:top-[78%] lg:h-96 lg:w-96 lg:top-[72%]
-"
-      ></div>
+      <div className="grid gap-12 lg:grid-cols-12 lg:gap-16">
+        <div className="lg:col-span-5">
+          <SectionHeading>{t("title")}</SectionHeading>
 
-      <div>
-        <h5 className="text-xl font-bold text-foreground my-2">{t("title")}</h5>
+          <p className="mt-6 max-w-md text-lg text-muted">{t("desc")}</p>
+          <p className="mt-4 max-w-md text-lg text-foreground">
+            {t("remote")}
+          </p>
 
-        <p className="text-muted mb-4 max-w-md">{t("desc")}</p>
-
-        <div className="flex flex-row gap-2">
-          <Link href="https://github.com/MuzafferKocak" target="_blank">
-            <div className="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center hover:bg-accent-dark transition-all duration-300">
-              <Image
-                src="/github-icon.svg"
-                alt="GitHub Icon"
-                width={48}
-                height={48}
-              />
-            </div>
-          </Link>
-
-          <Link
-            href="https://www.linkedin.com/in/muzaffer-kocak/"
-            target="_blank"
-          >
-            <div className="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center hover:bg-accent-dark transition-all duration-300">
-              <Image
-                src="/linkedin-icon.svg"
-                alt="Linkedin Icon"
-                width={48}
-                height={48}
-              />
-            </div>
-          </Link>
+          <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+            {socialLinks.map((link) => (
+              <Button
+                key={link.name}
+                href={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image
+                  src={link.icon}
+                  alt=""
+                  width={24}
+                  height={24}
+                  className="h-6 w-6 group-hover:invert"
+                />
+                {link.name}
+              </Button>
+            ))}
+          </div>
         </div>
-      </div>
 
-      <div>
-        {emailSubmitted ? (
-          <p className="text-accent-dark text-sm mt-2">{t("success")}</p>
-        ) : (
-          <form className="flex flex-col" onSubmit={handleSubmit}>
-            <Input
-              label={t("form.email")}
-              name="email"
-              type="email"
-              required
-              placeholder={t("form.emailPlaceholder")}
-            />
-
-            <Input
-              label={t("form.subject")}
-              name="subject"
-              type="text"
-              required
-              placeholder={t("form.subjectPlaceholder")}
-            />
-
-            <Input
-              multiline
-              label={t("form.message")}
-              name="message"
-              required
-              placeholder={t("form.messagePlaceholder")}
-            />
-
-            {hasError && (
-              <p role="alert" className="text-danger text-sm mb-3">
-                {t("error")}
+        {/* Das Formular steht auf einer hellen Fläche */}
+        <div className="lg:col-span-7">
+          <div className="rounded-md bg-surface p-6 text-ink sm:p-8">
+            {emailSubmitted ? (
+              <p role="status" className="py-6 font-display text-3xl">
+                {t("success")}
               </p>
+            ) : (
+              <form className="flex flex-col" onSubmit={handleSubmit}>
+                <Input
+                  tone="light"
+                  label={t("form.email")}
+                  name="email"
+                  type="email"
+                  required
+                  placeholder={t("form.emailPlaceholder")}
+                />
+
+                <Input
+                  tone="light"
+                  label={t("form.subject")}
+                  name="subject"
+                  type="text"
+                  required
+                  placeholder={t("form.subjectPlaceholder")}
+                />
+
+                <Input
+                  tone="light"
+                  multiline
+                  rows={5}
+                  label={t("form.message")}
+                  name="message"
+                  required
+                  placeholder={t("form.messagePlaceholder")}
+                />
+
+                {hasError && (
+                  <p role="alert" className="mb-3 text-sm text-danger-dark">
+                    {t("error")}
+                  </p>
+                )}
+                <Button type="submit" disabled={isSending} className="sm:w-fit">
+                  {isSending ? t("form.sending") : t("form.send")}
+                </Button>
+              </form>
             )}
-            <Button type="submit" disabled={isSending}>
-              {isSending ? t("form.sending") : t("form.send")}
-            </Button>
-          </form>
-        )}
-      </div>
+          </div>
+        </div>
       </div>
     </Section>
   );
