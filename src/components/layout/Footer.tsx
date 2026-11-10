@@ -12,8 +12,8 @@ export default function Footer() {
         <Image
           src="/images/mek.jpeg"
           alt="MEK"
-          width={40}
-          height={44}
+          width={1199}
+          height={1312}
           className="h-11 w-auto rounded-sm"
         />
 
