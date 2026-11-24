@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, type FormEvent } from "react";
+import { useEffect, useRef, useState, type FormEvent } from "react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import Button from "@/components/ui/Button";
@@ -27,6 +27,14 @@ export default function EmailSection() {
   const [hasError, setHasError] = useState(false);
 
   const t = useTranslations("Email");
+
+  // Nach dem Senden verschwindet das Formular. Der Fokus geht auf die
+  // Erfolgsmeldung, damit Screenreader sie vorlesen und die Tastatur
+  // ihre Position auf der Seite behält.
+  const successRef = useRef<HTMLParagraphElement>(null);
+  useEffect(() => {
+    if (emailSubmitted) successRef.current?.focus();
+  }, [emailSubmitted]);
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -92,7 +100,12 @@ export default function EmailSection() {
         <div className="lg:col-span-7">
           <div className="rounded-md bg-surface p-6 text-ink sm:p-8">
             {emailSubmitted ? (
-              <p role="status" className="py-6 font-display text-3xl">
+              <p
+                ref={successRef}
+                tabIndex={-1}
+                role="status"
+                className="py-6 font-display text-3xl focus:outline-none"
+              >
                 {t("success")}
               </p>
             ) : (
@@ -102,6 +115,7 @@ export default function EmailSection() {
                   label={t("form.email")}
                   name="email"
                   type="email"
+                  autoComplete="email"
                   required
                   placeholder={t("form.emailPlaceholder")}
                 />
