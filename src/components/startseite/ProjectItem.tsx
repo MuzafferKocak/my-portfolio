@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { CodeBracketIcon } from "@heroicons/react/24/solid";
+import { CodeBracketIcon, ServerStackIcon } from "@heroicons/react/24/solid";
 import Button from "@/components/ui/Button";
 import Reveal from "@/components/ui/Reveal";
 import Tag from "@/components/ui/Tag";
@@ -14,6 +14,9 @@ type ProjectItemProps = {
   previewUrl: string;
   liveLabel: string;
   codeLabel: string;
+  // Optional: Link zum Backend, wenn es in einem eigenen Repository liegt
+  backendUrl?: string;
+  backendLabel?: string;
 };
 
 // Ein Hauptprojekt als Zeile: links der Screenshot, rechts Titel, Text,
@@ -28,6 +31,8 @@ export default function ProjectItem({
   previewUrl,
   liveLabel,
   codeLabel,
+  backendUrl,
+  backendLabel,
 }: ProjectItemProps) {
   return (
     <li className="py-10 first:pt-0">
@@ -55,7 +60,7 @@ export default function ProjectItem({
             ))}
           </ul>
 
-          <div className="mt-6 flex flex-col gap-3 sm:flex-row">
+          <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
             <Button
               href={previewUrl}
               variant="solid"
@@ -76,6 +81,18 @@ export default function ProjectItem({
               <CodeBracketIcon className="h-5 w-5" aria-hidden="true" />
               {codeLabel}
             </Button>
+
+            {backendUrl && backendLabel && (
+              <Button
+                href={backendUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`${title}: ${backendLabel}`}
+              >
+                <ServerStackIcon className="h-5 w-5" aria-hidden="true" />
+                {backendLabel}
+              </Button>
+            )}
           </div>
         </div>
       </Reveal>

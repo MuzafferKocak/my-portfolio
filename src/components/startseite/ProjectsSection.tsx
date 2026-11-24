@@ -10,6 +10,8 @@ type Project = {
   image: string;
   gitUrl: string;
   previewUrl: string;
+  // Nur wenn das Backend in einem eigenen Repository liegt
+  backendUrl?: string;
   // Technik laut package.json des jeweiligen Projekts
   tags: string[];
 };
@@ -21,6 +23,7 @@ const featured: Project[] = [
     image: "/images/projects/myBlog.png",
     gitUrl: "https://github.com/MuzafferKocak/milestone-blog-app",
     previewUrl: "https://blog-app-murex-two.vercel.app/",
+    backendUrl: "https://github.com/MuzafferKocak/MyBlogApi",
     tags: ["React", "Redux Toolkit", "Material UI", "Formik", "Yup", "Node.js", "Express", "MongoDB"],
   },
   {
@@ -89,7 +92,12 @@ export default function ProjectsSection() {
 
       <ul className="mt-10 divide-y divide-border">
         {featured.map((project) => (
-          <ProjectItem key={project.id} {...propsFor(project)} />
+          <ProjectItem
+            key={project.id}
+            {...propsFor(project)}
+            backendUrl={project.backendUrl}
+            backendLabel={t("backend")}
+          />
         ))}
       </ul>
 

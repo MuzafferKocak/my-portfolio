@@ -55,6 +55,7 @@
     "title": "My Projects",
     "live": "Live demo",
     "code": "Code",
+    "backend": "Backend code",
     "more": "More projects",
     "screenshotAlt": "Screenshot of {title}",
     "items": {
