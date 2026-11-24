@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
-import { motion, MotionConfig } from "framer-motion";
+import { motion, MotionConfig } from "motion/react";
 import { useTranslations } from "next-intl";
 import Button from "@/components/ui/Button";
 import PlateFrame from "@/components/ui/PlateFrame";
