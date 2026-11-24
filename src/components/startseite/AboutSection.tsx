@@ -8,38 +8,24 @@ import Section from "@/components/ui/Section";
 import SectionHeading from "@/components/ui/SectionHeading";
 import TabButton from "@/components/ui/TabButton";
 
-type TabId = "skills" | "education" | "certifications";
+type TabId = "education" | "certifications";
 
 type TabItem = { id: TabId; title: string; content: ReactNode };
 
 const linkClasses = "underline-offset-4 hover:text-accent hover:underline";
 
 export default function AboutSection() {
-  const [tab, setTab] = useState<TabId>("skills");
+  const [tab, setTab] = useState<TabId>("education");
   const t = useTranslations("About");
 
   const tabs: TabItem[] = [
-    {
-      id: "skills",
-      title: t("skills.title"),
-      content: (
-        <ul className="list-disc space-y-1 pl-5">
-          <li>{t("skills.react")}</li>
-          <li>{t("skills.js")}</li>
-          <li>{t("skills.express")}</li>
-          <li>{t("skills.mongodb")}</li>
-          <li>{t("skills.node")}</li>
-        </ul>
-      ),
-    },
     {
       id: "education",
       title: t("education.title"),
       content: (
         <ul className="list-disc space-y-1 pl-5">
-          <li>{t("education.js")}</li>
-          <li>{t("education.frontend")}</li>
-          <li>{t("education.backend")}</li>
+          <li>{t("education.bootcamp")}</li>
+          <li>{t("education.cnc")}</li>
         </ul>
       ),
     },
@@ -108,16 +94,12 @@ export default function AboutSection() {
         <div className="lg:col-span-7">
           <SectionHeading>{t("title")}</SectionHeading>
 
-          {/* Zuerst die Geschichte vom CNC zum Code, dann Haltung, dann Werkzeuge */}
+          {/* Kurz: was aus der Werkstatt mitkommt, dann die Haltung.
+              Die Werkzeuge stehen im Abschnitt "Technologien". */}
           <p className="mt-6 max-w-prose text-xl leading-relaxed text-foreground">
-            {t("description3")}
+            {t("intro")}
           </p>
-          <p className="mt-4 max-w-prose text-lg text-muted">
-            {t("description2")}
-          </p>
-          <p className="mt-4 max-w-prose text-lg text-muted">
-            {t("description1")}
-          </p>
+          <p className="mt-4 max-w-prose text-lg text-muted">{t("text")}</p>
 
           <div role="tablist" className="mt-10 flex flex-wrap">
             {tabs.map((item) => (

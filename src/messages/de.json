@@ -21,23 +21,13 @@
 
   "About": {
     "title": "Über mich",
-    "imageAlt": "Ein Laptop auf einem Holztisch",
-    "description1": "Ich bin ein leidenschaftlicher Full-Stack-Webentwickler mit Fokus auf interaktive und responsive Webanwendungen. Meine Expertise umfasst JavaScript, React, Next.js, Redux, Node.js, Express, MongoDB, Sequelize, HTML, CSS, Tailwind, MUI, Bootstrap und Git.",
-    "description2": "Ich liebe Herausforderungen und bin stets bereit, mein Wissen zu erweitern. Zusammenarbeit ist der Schlüssel zu großartigen Anwendungen, und ich freue mich, zu innovativen Projekten beizutragen und in einem dynamischen Umfeld zu wachsen.",
-    "description3": "Nach meinem Hintergrund in CNC-Bearbeitung und Ingenieurwesen nutze ich nun meine Leidenschaft für Problemlösungen in der Full-Stack-Entwicklung. Diese vielfältige Erfahrung gibt mir eine einzigartige Perspektive bei der Bewältigung von Herausforderungen in der Technologie.",
-    "skills": {
-      "title": "Fähigkeiten",
-      "react": "React",
-      "js": "JavaScript",
-      "express": "Express",
-      "mongodb": "MongoDB",
-      "node": "Node.js"
-    },
+    "imageAlt": "Ein Laptop auf dem Schreibtisch, mein Arbeitsplatz heute",
+    "intro": "Heute sitze ich jeden Tag am Laptop und baue Web-Apps, vom Frontend bis zur Datenbank.",
+    "text": "Aus der Werkstatt habe ich eine Regel mitgenommen: erst messen, dann schneiden. Ich plane, bevor ich code, prüfe mein Ergebnis und arbeite gern im Team.",
     "education": {
       "title": "Ausbildung",
-      "js": "JavaScript",
-      "frontend": "Frontend-Entwicklung",
-      "backend": "Backend-Entwicklung"
+      "bootcamp": "Fullstack-Bootcamp bei Clarusway (2023 bis 2025): Frontend und Backend",
+      "cnc": "Berufsausbildung zum CNC-Dreher"
     },
     "certifications": {
       "title": "Zertifikate",

@@ -21,23 +21,13 @@
 
   "About": {
     "title": "Hakkımda",
-    "imageAlt": "Ahşap bir masada dizüstü bilgisayar",
-    "description1": "Etkileşimli ve duyarlı web uygulamalarına odaklanan tutkulu bir Full-Stack geliştiricisiyim. Uzmanlık alanlarım JavaScript, React, Next.js, Redux, Node.js, Express, MongoDB, Sequelize, HTML, CSS, Tailwind, MUI, Bootstrap ve Git’ten oluşuyor.",
-    "description2": "Zorlukları severim ve her zaman yeni şeyler öğrenmeye açığım. İşbirliği benim için önemli ve dinamik ekiplerde çalışıp yenilikçi projelere katkı sağlamaktan büyük keyif alıyorum.",
-    "description3": "CNC işleme ve mühendislik geçmişimin üzerine yazılım geliştirme tutkumu ekledim. Bu çeşitlilik, problemlere farklı bir bakış açısıyla yaklaşmamı sağlıyor.",
-    "skills": {
-      "title": "Yetenekler",
-      "react": "React",
-      "js": "JavaScript",
-      "express": "Express",
-      "mongodb": "MongoDB",
-      "node": "Node.js"
-    },
+    "imageAlt": "Masada bir dizüstü bilgisayar, bugünkü çalışma yerim",
+    "intro": "Bugün her gün dizüstü bilgisayarımın başında, frontend'den veritabanına kadar web uygulamaları geliştiriyorum.",
+    "text": "Atölyeden bir kural getirdim: önce ölç, sonra kes. Kod yazmadan önce planlıyor, sonucumu kontrol ediyor ve ekip içinde çalışmaktan keyif alıyorum.",
     "education": {
       "title": "Eğitim",
-      "js": "JavaScript",
-      "frontend": "Frontend Geliştirme",
-      "backend": "Backend Geliştirme"
+      "bootcamp": "Clarusway'de full stack bootcamp (2023–2025): frontend ve backend",
+      "cnc": "CNC tornacılığı meslek eğitimi"
     },
     "certifications": {
       "title": "Sertifikalar",
