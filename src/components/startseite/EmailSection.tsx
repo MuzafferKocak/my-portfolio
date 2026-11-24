@@ -71,9 +71,6 @@ export default function EmailSection() {
           <SectionHeading>{t("title")}</SectionHeading>
 
           <p className="mt-6 max-w-md text-lg text-muted">{t("desc")}</p>
-          <p className="mt-4 max-w-md text-lg text-foreground">
-            {t("remote")}
-          </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             {socialLinks.map((link) => (

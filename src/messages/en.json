@@ -86,10 +86,9 @@
     }
   },
   "Email": {
-    "title": "Let's Connect",
-    "desc": "I'm always open to new opportunities, collaborations, and exciting projects. Let's connect and create something great together!",
-    "remote": "I'm currently open to remote roles worldwide.",
-    "success": "Email sent successfully!",
+    "title": "Let's talk",
+    "desc": "Looking for someone to join your team, or have a question about my projects? Write to me and I'll get back to you as soon as possible.",
+    "success": "Thanks! Your message has arrived.",
     "error": "Something went wrong. Please try again later.",
     "form": {
       "email": "Your Email",

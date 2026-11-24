@@ -87,10 +87,9 @@
     }
   },
   "Email": {
-    "title": "Lass uns verbinden",
-    "desc": "Ich bin immer offen für neue Chancen, Zusammenarbeit und spannende Projekte. Lass uns verbinden und gemeinsam etwas Großartiges schaffen!",
-    "remote": "Ich bin aktuell offen für Remote-Stellen weltweit.",
-    "success": "E-Mail wurde erfolgreich gesendet!",
+    "title": "Lass uns reden",
+    "desc": "Du suchst Verstärkung für dein Team oder hast eine Frage zu meinen Projekten? Schreib mir, ich melde mich so schnell wie möglich.",
+    "success": "Danke! Deine Nachricht ist angekommen.",
     "error": "Etwas ist schiefgelaufen. Bitte versuche es später noch einmal.",
     "form": {
       "email": "Deine E-Mail",
