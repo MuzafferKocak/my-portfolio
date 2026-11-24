@@ -7,13 +7,16 @@
   },
 
   "Hero": {
-    "hello": "Merhaba, ben Muzaffer.",
-    "headline": "34 yıl CNC tezgâhının başında. Bugün web uygulamaları geliştiriyorum.",
-    "description": "CNC tornacısı olarak hassas çalışmayı öğrendim. Clarusway bootcamp'inden (2023–2025) bu yana React, Next.js, Node.js ve MongoDB ile full stack uygulamalar geliştiriyorum. Dünya genelinde uzaktan çalışmaya açığım.",
+    "hello": "Merhaba, ben",
+    "type1": "Muzaffer",
+    "type2": "Frontend Geliştirici",
+    "type3": "Backend Geliştirici",
+    "type4": "Full-Stack Geliştirici",
+    "description": "React, Next.js, Node.js ve MongoDB ile arayüzden veritabanına kadar modern web uygulamaları geliştiriyorum. Dünya genelinde uzaktan çalışmaya açığım.",
     "cta": "İletişime geç",
     "photoAlt": "Muzaffer Kocak portresi",
-    "cv": "CV (PDF, İngilizce)",
-    "cvFile": "/cv/MuzafferKocak.pdf"
+    "cv_en": "CV indir (EN)",
+    "cv_de": "CV indir (DE)"
   },
 
   "About": {
