@@ -3,7 +3,8 @@
     "about": "About",
     "skills": "Skills",
     "projects": "Projects",
-    "contact": "Contact"
+    "contact": "Contact",
+    "skip": "Skip to content"
   },
   "Hero": {
     "badgeLabel": "Remote",
