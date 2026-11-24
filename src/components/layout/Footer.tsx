@@ -11,7 +11,7 @@ export default function Footer() {
       <Container className="flex items-center gap-4 py-8">
         <Image
           src="/images/mek.jpeg"
-          alt="MEK"
+          alt=""
           width={1199}
           height={1312}
           className="h-11 w-auto rounded-sm"

@@ -9,12 +9,18 @@ const variants = {
 };
 
 type TabButtonProps = {
+  id: string;
+  controls: string;
   active: boolean;
   selectTab: () => void;
   children: ReactNode;
 };
 
+// Nur der aktive Tab ist mit der Tab-Taste erreichbar, zwischen den Tabs
+// wechselt man mit den Pfeiltasten (das steuert die Tab-Leiste).
 export default function TabButton({
+  id,
+  controls,
   active,
   selectTab,
   children,
@@ -22,7 +28,15 @@ export default function TabButton({
   const buttonClasses = active ? "text-foreground" : "text-muted";
 
   return (
-    <button type="button" role="tab" aria-selected={active} onClick={selectTab}>
+    <button
+      type="button"
+      role="tab"
+      id={id}
+      aria-selected={active}
+      aria-controls={controls}
+      tabIndex={active ? 0 : -1}
+      onClick={selectTab}
+    >
       <span
         className={`mr-5 block text-lg font-semibold hover:text-foreground ${buttonClasses}`}
       >
