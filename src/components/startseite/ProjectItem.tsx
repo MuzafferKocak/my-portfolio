@@ -2,10 +2,12 @@ import Image from "next/image";
 import { CodeBracketIcon } from "@heroicons/react/24/solid";
 import Button from "@/components/ui/Button";
 import Reveal from "@/components/ui/Reveal";
+import Tag from "@/components/ui/Tag";
 
 type ProjectItemProps = {
   title: string;
   description: string;
+  tags: string[];
   imgUrl: string;
   imgAlt: string;
   gitUrl: string;
@@ -14,11 +16,12 @@ type ProjectItemProps = {
   codeLabel: string;
 };
 
-// Ein Projekt als Zeile: links der Screenshot, rechts Titel, Text und Links.
-// Die Links sind immer sichtbar, damit sie auch auf dem Handy erreichbar sind.
+// Ein Hauptprojekt als Zeile: links der Screenshot, rechts Titel, Text,
+// Technik und Links. Die Links sind immer sichtbar, auch auf dem Handy.
 export default function ProjectItem({
   title,
   description,
+  tags,
   imgUrl,
   imgAlt,
   gitUrl,
@@ -45,6 +48,12 @@ export default function ProjectItem({
         <div className="lg:col-span-6">
           <h3 className="text-3xl">{title}</h3>
           <p className="mt-3 max-w-prose text-lg text-muted">{description}</p>
+
+          <ul className="mt-5 flex flex-wrap gap-2">
+            {tags.map((tag) => (
+              <Tag key={tag}>{tag}</Tag>
+            ))}
+          </ul>
 
           <div className="mt-6 flex flex-col gap-3 sm:flex-row">
             <Button

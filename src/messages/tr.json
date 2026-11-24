@@ -13,7 +13,6 @@
     "menuClose": "Menüyü kapat",
     "language": "Dil seç"
   },
-
   "Hero": {
     "badgeLabel": "Remote",
     "badge": "Dünya genelinde pozisyonlara açığım",
@@ -26,7 +25,6 @@
     "cvFile": "/cv/MuzafferKocak.pdf",
     "stackLabel": "Kullandığım teknolojiler"
   },
-
   "About": {
     "title": "Hakkımda",
     "imageAlt": "Masada bir dizüstü bilgisayar, bugünkü çalışma yerim",
@@ -45,7 +43,6 @@
       "backend": "https://verified.sertifier.com/en/verify/97928880125438/"
     }
   },
-
   "TechStack": {
     "title": "Teknolojiler",
     "groups": {
@@ -54,41 +51,39 @@
       "tools": "Araçlar"
     }
   },
-
   "Projects": {
     "title": "Projelerim",
     "live": "Canlı demo",
     "code": "Kod",
+    "more": "Diğer projeler",
     "screenshotAlt": "{title} ekran görüntüsü",
     "items": {
       "blog": {
         "title": "Milestone Blog Uygulaması",
-        "description": "Modern ve tamamen responsive bir blog platformudur. React, MUI ve Redux Toolkit ile geliştirilmiştir. Backend Node.js, Express ve MongoDB ile oluşturulmuştur. Kullanıcılar blog yazıları oluşturabilir, düzenleyebilir ve yönetebilir."
+        "description": "Node.js, Express ve MongoDB ile kendi yazdığım backend'e sahip blog platformu. Giriş ve kayıttan sonra önizlemeli yazı oluşturulabilir, düzenlenip silinebilir, yorum yapılabilir ve kişisel profil yönetilebilir. Frontend'de durum yönetimi Redux Toolkit, formlar Formik ve Yup ile."
       },
       "disney": {
         "title": "Disney+ Klon",
-        "description": "Next.js, React ve TailwindCSS ile oluşturulmuş responsive bir Disney+ UI klonu. TMDB API’den dinamik film ve dizi kataloğu, detay ve fragman modalları, localStorage ile watchlist ve hem masaüstü hem mobil için modern responsive tasarım içerir."
+        "description": "TMDB API verileriyle film ve dizi kataloğu; arama, fragman penceresi ve tarayıcıda saklanan izleme listesi."
       },
       "dashboard": {
         "title": "Admin Paneli",
-        "description": "Next.js, MUI ve Nivo Charts ile oluşturulmuş Admin paneli. Responsive, tema destekli ve frontend odaklıdır."
+        "description": "KPI'lar, veri tabloları, çubuk, çizgi, pasta ve harita grafikleri, takvim ve PDF dışa aktarma içeren yönetim paneli. Next.js App Router ve Material UI ile geliştirildi."
       },
-
       "movie": {
         "title": "Movie Uygulaması",
-        "description": "React, Tailwind CSS ve Firebase ile oluşturulmuş modern bir film uygulaması. Kullanıcılar filmleri keşfedebilir, detayları görebilir ve favorilere ekleyebilir."
+        "description": "Film arama, detay ve fragman görüntüleme; Firebase ile giriş ve kayıt."
       },
       "netflix": {
         "title": "Netflix Klon Uygulaması",
-        "description": "Next.js ve Tailwind CSS ile geliştirilen film–dizi platformu. Dinamik sayfalar, akıcı arayüz ve tüm cihazlarda yüksek performans sunar."
+        "description": "Next.js ile profil seçimi, film listeleri ve fragman bölümü içeren yayın arayüzü."
       },
       "stock": {
         "title": "Stok Yönetim Uygulaması",
-        "description": "Kullanıcıların ürünleri, markaları, şirketleri, satış ve alış işlemlerini verimli bir şekilde yönetmesine olanak tanıyan bir stok yönetim sistemi."
+        "description": "Firmalar, markalar, ürünler, alışlar ve satışlar için stok yönetimi. Clarusway API'si için frontend'i ben geliştirdim: giriş ve kayıt, doğrulamalı formlar, veri tabloları ve KPI'lar ile grafikler içeren bir dashboard."
       }
     }
   },
-
   "Email": {
     "title": "Konuşalım",
     "desc": "Ekibiniz için birini mi arıyorsunuz ya da projelerim hakkında bir sorunuz mu var? Bana yazın, en kısa sürede dönüş yapacağım.",
@@ -105,7 +100,6 @@
       "sending": "Gönderiliyor..."
     }
   },
-
   "Footer": {
     "rights": "Tüm hakları saklıdır."
   }

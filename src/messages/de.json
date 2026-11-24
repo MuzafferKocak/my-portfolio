@@ -13,7 +13,6 @@
     "menuClose": "Menü schließen",
     "language": "Sprache wählen"
   },
-
   "Hero": {
     "badgeLabel": "Remote",
     "badge": "Offen für Stellen weltweit",
@@ -26,7 +25,6 @@
     "cvFile": "/cv/MuzafferKocak_DE.pdf",
     "stackLabel": "Damit arbeite ich"
   },
-
   "About": {
     "title": "Über mich",
     "imageAlt": "Ein Laptop auf dem Schreibtisch, mein Arbeitsplatz heute",
@@ -57,32 +55,32 @@
     "title": "Meine Projekte",
     "live": "Live-Demo",
     "code": "Code",
+    "more": "Weitere Projekte",
     "screenshotAlt": "Screenshot von {title}",
     "items": {
       "blog": {
         "title": "Milestone-Blog-App",
-        "description": "Blog-App ist eine moderne und vollständig responsive Blogging-Plattform, entwickelt mit React, MUI und Redux Toolkit. Das Backend basiert auf Node.js, Express und MongoDB und bietet hohe Leistung. Benutzer können Blogposts erstellen, bearbeiten und verwalten – alles mit einer klaren und intuitiven Benutzeroberfläche."
+        "description": "Blog-Plattform mit eigenem Backend aus Node.js, Express und MongoDB. Nach Login und Registrierung kann man Beiträge mit Vorschau schreiben, bearbeiten und löschen, kommentieren und ein eigenes Profil pflegen. Im Frontend sorgen Redux Toolkit für den Zustand und Formik mit Yup für die Formulare."
       },
       "disney": {
         "title": "Disney+ Clone",
-        "description": "Ein responsiver Disney+-UI-Klon, erstellt mit Next.js, React und TailwindCSS. Er bietet einen dynamischen Film- und Serienkatalog über die TMDB-API, Detail- und Trailer-Modale, eine Watchlist mit localStorage und ein modernes responsives Design für Desktop und Mobilgeräte."
+        "description": "Film- und Serienkatalog mit Daten der TMDB-API, Suche, Trailer-Fenster und einer Merkliste im Browser."
       },
       "dashboard": {
         "title": "Admin-Dashboard",
-        "description": "Admin-Dashboard, erstellt mit Next.js, MUI und Nivo Charts. Responsive, themenfähig und frontend-fokussiert."
+        "description": "Admin-Oberfläche mit Kennzahlen, Datentabellen, Balken-, Linien-, Kreis- und Kartendiagrammen, einem Kalender und PDF-Export. Gebaut mit dem App Router von Next.js und Material UI."
       },
-
       "movie": {
         "title": "Movie-App",
-        "description": "Movie-App ist eine moderne Film-App, entwickelt mit React, Tailwind CSS und Firebase. Benutzer können Filme durchsuchen, Details ansehen und Favoriten speichern – alles in einer schnellen und responsiven Oberfläche."
+        "description": "Filme suchen, Details und Trailer ansehen, mit Login und Registrierung über Firebase."
       },
       "netflix": {
         "title": "Netflix-App",
-        "description": "Netflix-App ist eine Film- und Serienplattform, erstellt mit Next.js und Tailwind CSS. Sie bietet dynamische Seiten, eine flüssige Benutzeroberfläche und hervorragende Leistung auf allen Geräten."
+        "description": "Streaming-Oberfläche in Next.js mit Profilauswahl, Filmlisten und Trailer-Bereich."
       },
       "stock": {
         "title": "Stock-App",
-        "description": "Stock-App ist ein intuitives Bestandsverwaltungssystem, das Benutzern ermöglicht, Produkte, Marken, Unternehmen, Verkäufe und Einkäufe effizient zu verwalten."
+        "description": "Lagerverwaltung für Firmen, Marken, Produkte, Einkäufe und Verkäufe. Ich habe das Frontend für die API von Clarusway gebaut: Login und Registrierung, Formulare mit Prüfung, Datentabellen und ein Dashboard mit Kennzahlen und Diagrammen."
       }
     }
   },
