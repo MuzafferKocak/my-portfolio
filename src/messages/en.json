@@ -4,7 +4,10 @@
     "skills": "Skills",
     "projects": "Projects",
     "contact": "Contact",
-    "skip": "Skip to content"
+    "skip": "Skip to content",
+    "menuOpen": "Open menu",
+    "menuClose": "Close menu",
+    "language": "Choose language"
   },
   "Hero": {
     "badgeLabel": "Remote",

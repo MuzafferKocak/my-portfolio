@@ -4,7 +4,10 @@
     "skills": "Fähigkeiten",
     "projects": "Projekte",
     "contact": "Kontakt",
-    "skip": "Zum Inhalt springen"
+    "skip": "Zum Inhalt springen",
+    "menuOpen": "Menü öffnen",
+    "menuClose": "Menü schließen",
+    "language": "Sprache wählen"
   },
 
   "Hero": {

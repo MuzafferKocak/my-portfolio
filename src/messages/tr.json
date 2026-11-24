@@ -4,7 +4,10 @@
     "skills": "Yetenekler",
     "projects": "Projeler",
     "contact": "İletişim",
-    "skip": "İçeriğe geç"
+    "skip": "İçeriğe geç",
+    "menuOpen": "Menüyü aç",
+    "menuClose": "Menüyü kapat",
+    "language": "Dil seç"
   },
 
   "Hero": {

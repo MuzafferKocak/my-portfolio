@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
@@ -27,6 +27,20 @@ export default function Navbar() {
 
   const handleLinkClick = () => setNavbarOpen(false);
 
+  // Offenes Handy-Menü schließt mit Escape, der Fokus geht zurück zum Knopf
+  const menuButtonRef = useRef<HTMLButtonElement>(null);
+  useEffect(() => {
+    if (!navbarOpen) return;
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        setNavbarOpen(false);
+        menuButtonRef.current?.focus();
+      }
+    };
+    document.addEventListener("keydown", onKeyDown);
+    return () => document.removeEventListener("keydown", onKeyDown);
+  }, [navbarOpen]);
+
   return (
     <nav className="fixed inset-x-0 top-0 z-10 border-b border-border bg-secondary">
       <Container className="flex items-center justify-between py-2">
@@ -38,13 +52,14 @@ export default function Navbar() {
         >
           <Image
             src="/images/mek.jpeg"
-            alt="MEK"
+            alt=""
             priority
             width={1199}
             height={1312}
             className="h-12 w-auto rounded-sm"
           />
-          <span className="hidden font-display text-xl text-foreground sm:block">
+          {/* Auf dem Handy unsichtbar, aber für Screenreader der Name des Links */}
+          <span className="sr-only font-display text-xl text-foreground sm:not-sr-only">
             Muzaffer Kocak
           </span>
         </Link>
@@ -52,10 +67,12 @@ export default function Navbar() {
         {/* Mobile hamburger */}
         <div className="block md:hidden">
           <button
+            ref={menuButtonRef}
             type="button"
             onClick={() => setNavbarOpen(!navbarOpen)}
-            aria-label="Menu"
+            aria-label={navbarOpen ? t("menuClose") : t("menuOpen")}
             aria-expanded={navbarOpen}
+            aria-controls="mobile-menu"
             className="flex items-center rounded border border-border px-3 py-2 text-muted hover:border-accent hover:text-accent"
           >
             {navbarOpen ? (
@@ -85,7 +102,10 @@ export default function Navbar() {
 
       {/* Mobile overlay menu */}
       {navbarOpen && (
-        <div className="border-t border-border bg-secondary md:hidden">
+        <div
+          id="mobile-menu"
+          className="border-t border-border bg-secondary md:hidden"
+        >
           <MenuOverlay links={navLinks} closeMenu={handleLinkClick} />
         </div>
       )}
