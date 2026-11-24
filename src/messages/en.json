@@ -61,7 +61,7 @@
     "items": {
       "blog": {
         "title": "Milestone-Blog-App",
-        "description": "Blogging platform with my own backend built on Node.js, Express and MongoDB. After login and registration you can write posts with a preview, edit and delete them, comment and manage your own profile. On the frontend, Redux Toolkit handles state and Formik with Yup handles the forms."
+        "description": "Blogging platform with my own backend built on Node.js, Express and MongoDB: JWT login, user permissions and API documentation with Swagger. After registering you can write posts with a preview, edit and delete them, comment and manage your own profile. On the frontend, Redux Toolkit handles state and Formik with Yup handles the forms."
       },
       "disney": {
         "title": "Disney+ Clone",

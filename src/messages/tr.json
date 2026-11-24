@@ -61,7 +61,7 @@
     "items": {
       "blog": {
         "title": "Milestone Blog Uygulaması",
-        "description": "Node.js, Express ve MongoDB ile kendi yazdığım backend'e sahip blog platformu. Giriş ve kayıttan sonra önizlemeli yazı oluşturulabilir, düzenlenip silinebilir, yorum yapılabilir ve kişisel profil yönetilebilir. Frontend'de durum yönetimi Redux Toolkit, formlar Formik ve Yup ile."
+        "description": "Node.js, Express ve MongoDB ile kendi yazdığım backend'e sahip blog platformu: JWT ile giriş, kullanıcı yetkileri ve Swagger ile API dokümantasyonu. Kayıttan sonra önizlemeli yazı oluşturulabilir, düzenlenip silinebilir, yorum yapılabilir ve kişisel profil yönetilebilir. Frontend'de durum yönetimi Redux Toolkit, formlar Formik ve Yup ile."
       },
       "disney": {
         "title": "Disney+ Klon",

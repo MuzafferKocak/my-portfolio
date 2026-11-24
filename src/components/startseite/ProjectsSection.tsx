@@ -24,7 +24,7 @@ const featured: Project[] = [
     gitUrl: "https://github.com/MuzafferKocak/milestone-blog-app",
     previewUrl: "https://blog-app-murex-two.vercel.app/",
     backendUrl: "https://github.com/MuzafferKocak/MyBlogApi",
-    tags: ["React", "Redux Toolkit", "Material UI", "Formik", "Yup", "Node.js", "Express", "MongoDB"],
+    tags: ["React", "Redux Toolkit", "Material UI", "Formik", "Yup", "Node.js", "Express", "MongoDB", "JWT", "Swagger"],
   },
   {
     id: "stock",

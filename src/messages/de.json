@@ -61,7 +61,7 @@
     "items": {
       "blog": {
         "title": "Milestone-Blog-App",
-        "description": "Blog-Plattform mit eigenem Backend aus Node.js, Express und MongoDB. Nach Login und Registrierung kann man Beiträge mit Vorschau schreiben, bearbeiten und löschen, kommentieren und ein eigenes Profil pflegen. Im Frontend sorgen Redux Toolkit für den Zustand und Formik mit Yup für die Formulare."
+        "description": "Blog-Plattform mit eigenem Backend aus Node.js, Express und MongoDB: Login mit JWT, Benutzerrechte und eine API-Dokumentation mit Swagger. Nach der Registrierung kann man Beiträge mit Vorschau schreiben, bearbeiten und löschen, kommentieren und ein eigenes Profil pflegen. Im Frontend sorgen Redux Toolkit für den Zustand und Formik mit Yup für die Formulare."
       },
       "disney": {
         "title": "Disney+ Clone",
