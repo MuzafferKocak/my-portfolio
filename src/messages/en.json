@@ -6,16 +6,16 @@
     "contact": "Contact"
   },
   "Hero": {
-    "hello": "Hello, I am",
-    "type1": "Muzaffer",
-    "type2": "a Frontend Developer",
-    "type3": "a Backend Developer",
-    "type4": "a Full Stack Developer",
-    "description": "I build modern web apps with React, Next.js, Node.js and MongoDB, from the interface to the database. I'm open to remote roles worldwide.",
+    "badgeLabel": "Remote",
+    "badge": "Open to roles worldwide",
+    "hello": "Hi, I'm Muzaffer",
+    "title": "From CNC Machinist to Fullstack Dev",
+    "description": "After 34 years at the lathe, I completed the Clarusway full stack bootcamp (2023 to 2025). Today I build web apps with React, Next.js, Node.js and MongoDB.",
     "cta": "Get in touch",
     "photoAlt": "Portrait of Muzaffer Kocak",
-    "cv_en": "Download CV (EN)",
-    "cv_de": "Download CV (DE)"
+    "cv": "CV (PDF)",
+    "cvFile": "/cv/MuzafferKocak.pdf",
+    "stackLabel": "What I work with"
   },
   "About": {
     "title": "About Me",
