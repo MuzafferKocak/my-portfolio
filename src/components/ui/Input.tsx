@@ -30,7 +30,8 @@ const toneClasses: Record<Tone, { field: string; label: string }> = {
   },
   light: {
     field:
-      "bg-surface border-ink/30 text-ink placeholder-ink/50 focus-visible:outline-ink",
+      // ink/60 ergibt 3,8 : 1 Kontrast zum Rahmen (nötig sind 3 : 1)
+      "bg-surface border-ink/60 text-ink placeholder-ink/70 focus-visible:outline-ink",
     label: "text-ink",
   },
 };

@@ -1,43 +1,41 @@
 {
+  "Metadata": {
+    "title": "Muzaffer Kocak – Full Stack Geliştirici",
+    "description": "CNC tornacılıktan full stack geliştiriciliğe: React, Next.js, Node.js ve MongoDB ile web uygulamaları geliştiriyorum. Dünya genelinde uzaktan çalışmaya açığım."
+  },
   "Navbar": {
     "about": "Hakkımda",
-    "skills": "Yetenekler",
+    "skills": "Teknolojiler",
     "projects": "Projeler",
-    "contact": "İletişim"
+    "contact": "İletişim",
+    "skip": "İçeriğe geç",
+    "menuOpen": "Menüyü aç",
+    "menuClose": "Menüyü kapat",
+    "language": "Dil seç"
   },
 
   "Hero": {
-    "hello": "Merhaba, ben",
-    "type1": "Muzaffer",
-    "type2": "Frontend Geliştirici",
-    "type3": "Backend Geliştirici",
-    "type4": "Full-Stack Geliştirici",
-    "description": "React, Next.js, Node.js ve MongoDB ile arayüzden veritabanına kadar modern web uygulamaları geliştiriyorum. Dünya genelinde uzaktan çalışmaya açığım.",
+    "badgeLabel": "Remote",
+    "badge": "Dünya genelinde pozisyonlara açığım",
+    "hello": "Merhaba, ben Muzaffer",
+    "title": "CNC Tornacılıktan Fullstack Geliştiriciliğe",
+    "description": "34 yıl torna tezgâhında çalıştıktan sonra 2023–2025 yılları arasında Clarusway'de full stack bootcamp'ini tamamladım. Bugün React, Next.js, Node.js ve MongoDB ile web uygulamaları geliştiriyorum.",
     "cta": "İletişime geç",
     "photoAlt": "Muzaffer Kocak portresi",
-    "cv_en": "CV indir (EN)",
-    "cv_de": "CV indir (DE)"
+    "cv": "CV (PDF, İngilizce)",
+    "cvFile": "/cv/MuzafferKocak.pdf",
+    "stackLabel": "Kullandığım teknolojiler"
   },
 
   "About": {
     "title": "Hakkımda",
-    "imageAlt": "Ahşap bir masada dizüstü bilgisayar",
-    "description1": "Etkileşimli ve duyarlı web uygulamalarına odaklanan tutkulu bir Full-Stack geliştiricisiyim. Uzmanlık alanlarım JavaScript, React, Next.js, Redux, Node.js, Express, MongoDB, Sequelize, HTML, CSS, Tailwind, MUI, Bootstrap ve Git’ten oluşuyor.",
-    "description2": "Zorlukları severim ve her zaman yeni şeyler öğrenmeye açığım. İşbirliği benim için önemli ve dinamik ekiplerde çalışıp yenilikçi projelere katkı sağlamaktan büyük keyif alıyorum.",
-    "description3": "CNC işleme ve mühendislik geçmişimin üzerine yazılım geliştirme tutkumu ekledim. Bu çeşitlilik, problemlere farklı bir bakış açısıyla yaklaşmamı sağlıyor.",
-    "skills": {
-      "title": "Yetenekler",
-      "react": "React",
-      "js": "JavaScript",
-      "express": "Express",
-      "mongodb": "MongoDB",
-      "node": "Node.js"
-    },
+    "imageAlt": "Masada bir dizüstü bilgisayar, bugünkü çalışma yerim",
+    "intro": "Bugün her gün dizüstü bilgisayarımın başında, frontend'den veritabanına kadar web uygulamaları geliştiriyorum.",
+    "text": "Atölyeden bir kural getirdim: önce ölç, sonra kes. Kod yazmadan önce planlıyor, sonucumu kontrol ediyor ve ekip içinde çalışmaktan keyif alıyorum.",
     "education": {
       "title": "Eğitim",
-      "js": "JavaScript",
-      "frontend": "Frontend Geliştirme",
-      "backend": "Backend Geliştirme"
+      "bootcamp": "Clarusway'de full stack bootcamp (2023–2025): frontend ve backend",
+      "cnc": "CNC tornacılığı meslek eğitimi"
     },
     "certifications": {
       "title": "Sertifikalar",
@@ -92,10 +90,9 @@
   },
 
   "Email": {
-    "title": "İletişime Geçelim",
-    "desc": "Yeni fırsatlar, işbirlikleri ve heyecan verici projelere her zaman açığım. Haydi iletişime geçelim ve birlikte harika işler yapalım!",
-    "remote": "Şu anda dünya genelinde uzaktan çalışma fırsatlarına açığım.",
-    "success": "E-posta başarıyla gönderildi!",
+    "title": "Konuşalım",
+    "desc": "Ekibiniz için birini mi arıyorsunuz ya da projelerim hakkında bir sorunuz mu var? Bana yazın, en kısa sürede dönüş yapacağım.",
+    "success": "Teşekkürler! Mesajınız ulaştı.",
     "error": "Bir şeyler ters gitti. Lütfen daha sonra tekrar deneyin.",
     "form": {
       "email": "E-posta",

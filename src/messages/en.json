@@ -1,41 +1,39 @@
 {
+  "Metadata": {
+    "title": "Muzaffer Kocak – Full Stack Developer",
+    "description": "From CNC machinist to full stack developer: I build web apps with React, Next.js, Node.js and MongoDB. Open to remote roles worldwide."
+  },
   "Navbar": {
     "about": "About",
-    "skills": "Skills",
+    "skills": "Tech Stack",
     "projects": "Projects",
-    "contact": "Contact"
+    "contact": "Contact",
+    "skip": "Skip to content",
+    "menuOpen": "Open menu",
+    "menuClose": "Close menu",
+    "language": "Choose language"
   },
   "Hero": {
-    "hello": "Hello, I am",
-    "type1": "Muzaffer",
-    "type2": "a Frontend Developer",
-    "type3": "a Backend Developer",
-    "type4": "a Full Stack Developer",
-    "description": "I build modern web apps with React, Next.js, Node.js and MongoDB, from the interface to the database. I'm open to remote roles worldwide.",
+    "badgeLabel": "Remote",
+    "badge": "Open to roles worldwide",
+    "hello": "Hi, I'm Muzaffer",
+    "title": "From CNC Machinist to Fullstack Dev",
+    "description": "After 34 years at the lathe, I completed the Clarusway full stack bootcamp (2023 to 2025). Today I build web apps with React, Next.js, Node.js and MongoDB.",
     "cta": "Get in touch",
     "photoAlt": "Portrait of Muzaffer Kocak",
-    "cv_en": "Download CV (EN)",
-    "cv_de": "Download CV (DE)"
+    "cv": "CV (PDF)",
+    "cvFile": "/cv/MuzafferKocak.pdf",
+    "stackLabel": "What I work with"
   },
   "About": {
     "title": "About Me",
-    "imageAlt": "A laptop on a wooden desk",
-    "description1": "I am a passionate Full Stack Web Developer focused on creating interactive and responsive web applications. My expertise includes JavaScript, React, Next.js, Redux, Node.js, Express, MongoDB, Sequelize, HTML, CSS, Tailwind, MUI, Bootstrap, and Git.",
-    "description2": "I thrive on challenges and am always eager to expand my knowledge. Collaboration is key to building great applications, and I am excited to contribute to innovative projects and grow in a dynamic environment.",
-    "description3": "Having transitioned from a background in CNC machining and engineering, I now channel my passion for problem-solving into full stack development. This diverse experience gives me a unique perspective on tackling challenges in technology.",
-    "skills": {
-      "title": "Skills",
-      "react": "React",
-      "js": "JavaScript",
-      "express": "Express",
-      "mongodb": "MongoDB",
-      "node": "Node.js"
-    },
+    "imageAlt": "A laptop on a desk, my workplace today",
+    "intro": "Today I spend every day at my laptop building web apps, from the frontend to the database.",
+    "text": "From the workshop I brought one rule with me: measure twice, cut once. I plan before I code, check my results and enjoy working in a team.",
     "education": {
       "title": "Education",
-      "js": "JavaScript",
-      "frontend": "Frontend Development",
-      "backend": "Backend Development"
+      "bootcamp": "Full stack bootcamp at Clarusway (2023 to 2025): frontend and backend",
+      "cnc": "Apprenticeship as a CNC machinist"
     },
     "certifications": {
       "title": "Certifications",
@@ -88,10 +86,9 @@
     }
   },
   "Email": {
-    "title": "Let's Connect",
-    "desc": "I'm always open to new opportunities, collaborations, and exciting projects. Let's connect and create something great together!",
-    "remote": "I'm currently open to remote roles worldwide.",
-    "success": "Email sent successfully!",
+    "title": "Let's talk",
+    "desc": "Looking for someone to join your team, or have a question about my projects? Write to me and I'll get back to you as soon as possible.",
+    "success": "Thanks! Your message has arrived.",
     "error": "Something went wrong. Please try again later.",
     "form": {
       "email": "Your Email",
