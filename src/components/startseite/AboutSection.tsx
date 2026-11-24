@@ -7,6 +7,7 @@ import { useTranslations } from "next-intl";
 import Section from "@/components/ui/Section";
 import SectionHeading from "@/components/ui/SectionHeading";
 import TabButton from "@/components/ui/TabButton";
+import Reveal from "@/components/ui/Reveal";
 
 type TabId = "education" | "certifications";
 
@@ -101,7 +102,7 @@ export default function AboutSection() {
   return (
     <Section id="about">
       <div className="grid items-start gap-10 lg:grid-cols-12 lg:gap-14">
-        <div className="lg:col-span-5">
+        <Reveal className="lg:col-span-5">
           <Image
             src="/images/computer.webp"
             alt={t("imageAlt")}
@@ -110,9 +111,9 @@ export default function AboutSection() {
             sizes="(min-width: 1024px) 460px, 90vw"
             className="aspect-[4/3] w-full rounded-md object-cover"
           />
-        </div>
+        </Reveal>
 
-        <div className="lg:col-span-7">
+        <Reveal className="lg:col-span-7" delay={0.15}>
           <SectionHeading>{t("title")}</SectionHeading>
 
           {/* Kurz: was aus der Werkstatt mitkommt, dann die Haltung.
@@ -148,7 +149,7 @@ export default function AboutSection() {
           >
             {activeTab.content}
           </div>
-        </div>
+        </Reveal>
       </div>
     </Section>
   );

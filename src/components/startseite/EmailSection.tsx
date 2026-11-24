@@ -7,6 +7,7 @@ import Button from "@/components/ui/Button";
 import Input from "@/components/ui/Input";
 import Section from "@/components/ui/Section";
 import SectionHeading from "@/components/ui/SectionHeading";
+import Reveal from "@/components/ui/Reveal";
 
 const socialLinks = [
   {
@@ -67,7 +68,7 @@ export default function EmailSection() {
   return (
     <Section id="contact" tone="secondary">
       <div className="grid gap-12 lg:grid-cols-12 lg:gap-16">
-        <div className="lg:col-span-5">
+        <Reveal className="lg:col-span-5">
           <SectionHeading>{t("title")}</SectionHeading>
 
           <p className="mt-6 max-w-md text-lg text-muted">{t("desc")}</p>
@@ -91,10 +92,10 @@ export default function EmailSection() {
               </Button>
             ))}
           </div>
-        </div>
+        </Reveal>
 
         {/* Das Formular steht auf einer hellen Fläche */}
-        <div className="lg:col-span-7">
+        <Reveal className="lg:col-span-7" delay={0.15}>
           <div className="rounded-md bg-surface p-6 text-ink sm:p-8">
             {emailSubmitted ? (
               <p
@@ -147,7 +148,7 @@ export default function EmailSection() {
               </form>
             )}
           </div>
-        </div>
+        </Reveal>
       </div>
     </Section>
   );

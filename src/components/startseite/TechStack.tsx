@@ -2,6 +2,7 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 import Section from "@/components/ui/Section";
 import SectionHeading from "@/components/ui/SectionHeading";
+import Reveal from "@/components/ui/Reveal";
 
 type Skill = { name: string; icon: string };
 
@@ -61,7 +62,7 @@ export default function TechStack() {
 
       <div className="mt-10 divide-y divide-ink/15 border-y border-ink/15">
         {groups.map((group) => (
-          <div
+          <Reveal
             key={group.id}
             className="grid gap-5 py-8 md:grid-cols-12 md:gap-8"
           >
@@ -86,7 +87,7 @@ export default function TechStack() {
                 </li>
               ))}
             </ul>
-          </div>
+          </Reveal>
         ))}
       </div>
     </Section>
