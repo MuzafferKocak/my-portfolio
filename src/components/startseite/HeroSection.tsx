@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import { TypeAnimation } from "react-type-animation";
 import { motion, MotionConfig } from "motion/react";
 import { useTranslations } from "next-intl";
 import Button from "@/components/ui/Button";
@@ -31,22 +30,9 @@ export default function HeroSection() {
               <span className="block text-2xl text-muted sm:text-3xl">
                 {t("hello")}
               </span>
-              <TypeAnimation
-                sequence={[
-                  t("type1"),
-                  5000,
-                  t("type2"),
-                  5000,
-                  t("type3"),
-                  5000,
-                  t("type4"),
-                  5000,
-                ]}
-                wrapper="span"
-                speed={50}
-                repeat={Infinity}
-                className="mt-2 block min-h-[2.2em] text-4xl sm:text-5xl lg:text-6xl"
-              />
+              <span className="mt-3 block text-4xl sm:text-5xl lg:text-6xl">
+                {t("headline")}
+              </span>
             </h1>
 
             <p className="mt-4 max-w-xl text-lg text-muted lg:text-xl">
@@ -58,8 +44,9 @@ export default function HeroSection() {
                 {t("cta")}
               </Button>
 
+              {/* Lebenslauf in der gewählten Sprache (Datei steht in messages) */}
               <Button
-                href="/cv/MuzafferKocak.pdf"
+                href={t("cvFile")}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -70,22 +57,7 @@ export default function HeroSection() {
                   alt=""
                   className="invert group-hover:invert-0"
                 />
-                {t("cv_en")}
-              </Button>
-
-              <Button
-                href="/cv/MuzafferKocak_DE.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Image
-                  src="/download-icon.svg"
-                  width={24}
-                  height={24}
-                  alt=""
-                  className="invert group-hover:invert-0"
-                />
-                {t("cv_de")}
+                {t("cv")}
               </Button>
             </div>
           </motion.div>

@@ -7,16 +7,13 @@
   },
 
   "Hero": {
-    "hello": "Hallo, ich bin",
-    "type1": "Muzaffer",
-    "type2": "ein Frontend-Entwickler",
-    "type3": "ein Backend-Entwickler",
-    "type4": "ein Full-Stack-Entwickler",
-    "description": "Ich entwickle moderne Web-Apps mit React, Next.js, Node.js und MongoDB, von der Oberfläche bis zur Datenbank. Ich bin offen für Remote-Stellen weltweit.",
+    "hello": "Hallo, ich bin Muzaffer.",
+    "headline": "34 Jahre an der CNC-Maschine. Heute baue ich Web-Apps.",
+    "description": "Ich habe als CNC-Dreher gelernt, genau zu arbeiten. Seit meinem Bootcamp bei Clarusway (2023 bis 2025) entwickle ich Fullstack-Anwendungen mit React, Next.js, Node.js und MongoDB. Ich bin offen für Remote-Stellen weltweit.",
     "cta": "Kontakt aufnehmen",
     "photoAlt": "Porträt von Muzaffer Kocak",
-    "cv_en": "Lebenslauf (EN)",
-    "cv_de": "Lebenslauf (DE)"
+    "cv": "Lebenslauf (PDF)",
+    "cvFile": "/cv/MuzafferKocak_DE.pdf"
   },
 
   "About": {
