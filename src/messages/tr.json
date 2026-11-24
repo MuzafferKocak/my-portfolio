@@ -1,4 +1,8 @@
 {
+  "Metadata": {
+    "title": "Muzaffer Kocak – Full Stack Geliştirici",
+    "description": "CNC tornacılıktan full stack geliştiriciliğe: React, Next.js, Node.js ve MongoDB ile web uygulamaları geliştiriyorum. Dünya genelinde uzaktan çalışmaya açığım."
+  },
   "Navbar": {
     "about": "Hakkımda",
     "skills": "Yetenekler",

@@ -1,4 +1,8 @@
 {
+  "Metadata": {
+    "title": "Muzaffer Kocak – Fullstack-Entwickler",
+    "description": "Vom CNC-Dreher zum Fullstack-Entwickler: Ich baue Web-Apps mit React, Next.js, Node.js und MongoDB. Offen für Remote-Stellen weltweit."
+  },
   "Navbar": {
     "about": "Über mich",
     "skills": "Fähigkeiten",
