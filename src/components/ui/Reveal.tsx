@@ -10,7 +10,8 @@ type RevealProps = {
 };
 
 // Blendet den Inhalt einmal sanft ein, sobald er beim Scrollen ins Bild kommt.
-// Bei "Bewegung reduzieren" im System nur Einblenden, keine Bewegung.
+// Bei "Bewegung reduzieren" oder ohne JavaScript ist der Inhalt sofort da:
+// Das regeln globals.css und der <noscript>-Block im Layout über data-reveal.
 export default function Reveal({
   children,
   className = "",
@@ -19,6 +20,7 @@ export default function Reveal({
   return (
     <MotionConfig reducedMotion="user">
       <motion.div
+        data-reveal
         className={className}
         initial={{ opacity: 0, y: 24 }}
         whileInView={{ opacity: 1, y: 0 }}

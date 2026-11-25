@@ -66,6 +66,10 @@ export default async function LocaleLayout({
     >
       <head>
         <link rel="icon" href="/favicon.ico" />
+        {/* Ohne JavaScript startet ui/Reveal nie: Inhalt trotzdem zeigen */}
+        <noscript>
+          <style>{`[data-reveal]{opacity:1!important;transform:none!important}`}</style>
+        </noscript>
       </head>
       <body>
         <NextIntlClientProvider locale={locale} messages={messages}>
