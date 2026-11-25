@@ -19,7 +19,7 @@ type ProjectCardProps = {
 };
 
 const linkClasses =
-  "inline-flex items-center gap-1.5 font-medium text-accent underline-offset-4 hover:underline";
+  "inline-flex min-h-11 items-center gap-1.5 font-medium text-accent underline-offset-4 hover:underline";
 
 // Kleine Karte für "Weitere Projekte": Bild, Titel, ein Satz, Technik, Links.
 export default function ProjectCard({

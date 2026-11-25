@@ -36,6 +36,8 @@ export default function TabButton({
       aria-controls={controls}
       tabIndex={active ? 0 : -1}
       onClick={selectTab}
+      // py-0.5: die Tippfläche wird 44px hoch (Empfehlung fürs Handy)
+      className="py-0.5"
     >
       <span
         className={`mr-5 block text-lg font-semibold hover:text-foreground ${buttonClasses}`}
