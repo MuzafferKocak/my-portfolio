@@ -36,7 +36,17 @@ export async function generateMetadata({
     : routing.defaultLocale;
   const t = await getTranslations({ locale, namespace: "Metadata" });
 
+  // Vorschaubild beim Teilen: Bildschirmfoto des Hero je Sprache (1200x630)
+  const image = {
+    url: `/images/og/og-${locale}.jpg`,
+    width: 1200,
+    height: 630,
+    alt: t("title"),
+  };
+
   return {
+    // Damit Dienste wie LinkedIn den vollen Link zum Bild bekommen
+    metadataBase: new URL("https://muzaffer-kocak.vercel.app"),
     title: t("title"),
     description: t("description"),
     openGraph: {
@@ -44,6 +54,13 @@ export async function generateMetadata({
       description: t("description"),
       locale,
       type: "website",
+      images: [image],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: t("title"),
+      description: t("description"),
+      images: [image],
     },
   };
 }
@@ -66,6 +83,10 @@ export default async function LocaleLayout({
     >
       <head>
         <link rel="icon" href="/favicon.ico" />
+        {/* Ohne JavaScript startet ui/Reveal nie: Inhalt trotzdem zeigen */}
+        <noscript>
+          <style>{`[data-reveal]{opacity:1!important;transform:none!important}`}</style>
+        </noscript>
       </head>
       <body>
         <NextIntlClientProvider locale={locale} messages={messages}>

@@ -59,7 +59,7 @@ export default function Navbar() {
             className="h-12 w-auto rounded-sm"
           />
           {/* Auf dem Handy unsichtbar, aber für Screenreader der Name des Links */}
-          <span className="sr-only font-display text-xl text-foreground sm:not-sr-only">
+          <span className="sr-only whitespace-nowrap font-display text-xl text-foreground sm:not-sr-only">
             Muzaffer Kocak
           </span>
         </Link>
@@ -73,7 +73,7 @@ export default function Navbar() {
             aria-label={navbarOpen ? t("menuClose") : t("menuOpen")}
             aria-expanded={navbarOpen}
             aria-controls="mobile-menu"
-            className="flex items-center rounded border border-border px-3 py-2 text-muted hover:border-accent hover:text-accent"
+            className="flex h-11 w-11 items-center justify-center rounded border border-border text-muted hover:border-accent hover:text-accent"
           >
             {navbarOpen ? (
               <XMarkIcon className="h-5 w-5" />
@@ -84,8 +84,8 @@ export default function Navbar() {
         </div>
 
         {/* Desktop menu */}
-        <div className="hidden items-center gap-8 md:flex">
-          <ul className="flex gap-8">
+        <div className="hidden items-center gap-6 md:flex lg:gap-8">
+          <ul className="flex gap-6 lg:gap-8">
             {navLinks.map((link) => (
               <li key={link.path}>
                 <NavLink

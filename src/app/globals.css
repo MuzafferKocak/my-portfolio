@@ -39,6 +39,13 @@ html {
   html {
     scroll-behavior: auto;
   }
+
+  /* Scroll-Einblendung (ui/Reveal) ganz aus: Inhalt sofort sichtbar.
+     !important schlägt die Inline-Styles, die Motion setzt. */
+  [data-reveal] {
+    opacity: 1 !important;
+    transform: none !important;
+  }
 }
 
 body {

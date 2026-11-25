@@ -26,7 +26,7 @@ type NativeButtonProps = CommonProps & { href?: undefined } & Omit<
 type ButtonProps = LinkButtonProps | NativeButtonProps;
 
 const solidClasses =
-  "bg-accent hover:bg-accent-dark text-ink font-medium py-2.5 px-6 rounded-full w-full disabled:opacity-60 disabled:cursor-not-allowed";
+  "bg-accent hover:bg-accent-dark text-ink font-medium py-3 px-6 rounded-full w-full disabled:opacity-60 disabled:cursor-not-allowed";
 
 // Rahmen mit Farbverlauf: außen der Rahmen, innen der dunkle Hintergrund
 const outlineOuterClasses =
